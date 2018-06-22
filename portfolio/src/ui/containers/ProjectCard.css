@@ -1,0 +1,44 @@
+#projectCard {
+    display: block;
+    width: 100%;
+    margin: 2vh;
+}
+
+#title {
+    font-family: Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    line-height: 1.5;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#cardTop {
+    height: 100%;
+    max-height: 50%;
+    border-bottom: 1px solid #c1c1c1;
+}
+
+#blurb {
+    font-family: Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    line-height: 1.5;
+    max-width: 90%;
+}
+
+#img {
+    max-width: 300px;
+    margin: auto;
+    display: block;
+    padding: 15%;
+}
+
+/* use these styles for devices smaller then 500px */
+@media (max-width: 500px) {
+    #projectCard {
+        margin: 0px
+    }
+}
+
+@media (min-width: 500px) and (max-width: 1000px) {
+    #projectCard {
+        margin: 0px
+    }
+}

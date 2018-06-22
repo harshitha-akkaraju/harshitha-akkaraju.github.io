@@ -1,0 +1,29 @@
+.body {
+    fontFamily: Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    line-height: 1.5;
+}
+
+#header {
+    padding-top: 5vh;
+    max-width: 80vw;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+#header .nameLg {
+    display: inline;
+}
+
+#header .nameSm {
+    display: none;
+}
+
+.links {
+    display: flex;
+}
+
+.link {
+    margin-left: 10%;
+}

@@ -1,0 +1,31 @@
+.body {
+    fontFamily: Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    line-height: 1.5;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header {
+    padding-top: 5vh;
+    max-width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.links {
+    display: flex;
+}
+
+.link {
+    margin-left: 10%;
+    pointer: 'cursor';
+}
+
+.pitch {
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    max-width: 75vw;
+    font-weight: 300;
+}
