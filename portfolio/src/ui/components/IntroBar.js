@@ -5,6 +5,14 @@ import './IntroBar.css';
 
 /// Component for the navigation bar + brief intro on the landing page
 class IntroBar extends Component {
+	switchTab(tabName) {
+		if (tabName === "about") {
+			this.props.history.push(Routes.about);
+		} else if (tabName === "home") {
+			this.props.history.push(Routes.home);
+		}
+	}
+
 	render() {
 		// can't over-ride id selector
 		let styles = {
@@ -14,10 +22,19 @@ class IntroBar extends Component {
 		return(
 				<div className={"container body"}>
 					<div id={"header"}>
-						<a>Harshitha Akkaraju</a>
-						<div className={"links"} style={styles}>
+						<a id={"nameLg"}
+							 style={styles}
+							 onClick={() => this.switchTab("home")}>
+							Harshitha Akkaraju
+						</a>
+						<a id={"nameSm"}
+							 onClick={() => this.switchTab("home")}>
+							Harshitha
+						</a>
+						<div className={"links"}
+								 style={styles}>
 							<a className={"link"}
-								 onClick={() => this.props.history.push(Routes.about)}>About</a>
+								 onClick={() => this.switchTab("about")}>About</a>
 							<a className={"link"}>Resume</a>
 						</div>
 					</div>

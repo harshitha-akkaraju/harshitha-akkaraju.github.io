@@ -4,20 +4,12 @@
 }
 
 #header {
+    width: 100%;
     padding-top: 5vh;
-    max-width: 80vw;
     display: flex;
     justify-content: space-around;
     font-size: 1em;
     font-weight: 500;
-}
-
-#header .nameLg {
-    display: inline;
-}
-
-#header .nameSm {
-    display: none;
 }
 
 .links {
@@ -27,3 +19,27 @@
 .link {
     margin-left: 10%;
 }
+
+#nameLg {
+
+}
+
+#nameSm {
+    display: none;
+}
+
+/* change the nav bar's appearance on smaller screens */
+@media (max-width: 375px) {
+    #nameSm {
+        display: block;
+    }
+
+    #nameLg {
+        display: none;
+    }
+
+    .link {
+        margin-left: 7%;
+    }
+}
+
