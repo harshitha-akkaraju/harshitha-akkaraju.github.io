@@ -9,18 +9,19 @@
     padding-top: 5vh;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start !important;
     font-size: 1em;
     font-weight: 500;
 }
 
 .links {
     display: flex;
+    justify-content: space-evenly;
 }
 
 .link {
-    margin-left: 10%;
-    pointer: 'cursor';
+    margin: 0 auto 0 10% !important;
+    color: #000000;
 }
 
 .pitch {
@@ -32,11 +33,12 @@
 }
 
 #nameLg {
-
+    color: #000000;
 }
 
 #nameSm {
     display: none;
+    color: #000000;
 }
 
 /* change the nav bar's appearance on smaller screens */
@@ -50,7 +52,7 @@
     }
 
     .link {
-        margin-left: 7%;
+
     }
 }
 

@@ -1,14 +1,17 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 import Orgs from './../../data/Organizations';
+import Projects from './../../data/Projects';
 import ProjectCard from './ProjectCard';
 import './Section.css';
 
 class Section extends Component {
 	render() {
 		let content = [];
-		// TODO: Add info for projects
 		if (this.props.title === 'Organizations') {
 			content = Orgs;
+		} else if (this.props.title === 'Projects') {
+			content = Projects;
 		}
 		return(
 			<div id={"sectionBody"} className={"container"}>
@@ -17,9 +20,14 @@ class Section extends Component {
 					{
 						Object.keys(content).map((key, index) => {
 							let item = content[key];
-							return (<ProjectCard key={index} title={item.name}
-																			imgURL={item.imgURL}
-																			blurb={item.position}/>)
+							return (
+									<Link to={`/projects/${item.name}`} key={index}>
+										<ProjectCard title={item.name}
+																 imgURL={item.imgURL}
+																 blurb={item.position}
+																 history={this.props.history}/>
+									</Link>
+							)
 						})
 					}
 				</div>

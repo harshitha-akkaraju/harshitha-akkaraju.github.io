@@ -1,17 +1,9 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 import Routes from './../../data/Constants';
-import Intro from '../../data/BriefIntro';
 import './NavBar.css';
 
 class NavBar extends Component {
-	switchTab(tabName) {
-		if (tabName === "about") {
-			this.props.history.push(Routes.about);
-		} else if (tabName === "home") {
-			this.props.history.push(Routes.home);
-		}
-	}
-
 	render() {
 		// can't over-ride id selector
 		let styles = {
@@ -22,20 +14,12 @@ class NavBar extends Component {
 				<div className={"container"}>
 					<div className={"body"}>
 						<div id={"header"}>
-							<a id={"nameLg"}
-								 onClick={() => this.switchTab("home")}>
-								Harshitha Akkaraju
-							</a>
-							<a id={"nameSm"}
-								 onClick={() => this.switchTab("home")}>
-								Harshitha
-							</a>
-
+							<Link to={Routes.home}><p id={"nameLg"}>Harshitha Akkaraju</p></Link>
+							<Link to={Routes.home}><p id={"nameSm"}>Harshitha</p></Link>
 							<div className={"links"} style={styles}>
-								<span className={"link"}
-									 onClick={() => this.switchTab("home")}>Projects</span>
-								<span className={"link"}>About</span>
-								<span className={"link"}>Resume</span>
+								<Link to={Routes.home}><p className={"link"}>Projects</p></Link>
+								<Link to={Routes.home}><p className={"link"}>About</p></Link>
+								<Link to={Routes.home}><p className={"link"}>Resume</p></Link>
 							</div>
 						</div>
 					</div>

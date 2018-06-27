@@ -1,8 +1,7 @@
 #sectionBody {
     font-family: Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     line-height: 1.5;
-    margin-left: auto;
-    margin-right: auto;
+    height: 100%;
 }
 
 #heading {
@@ -13,18 +12,22 @@
 
 #cards {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+}
+
+.projectCard {
+    cursor: pointer;
 }
 
 /* use these styles for devices smaller then 500px */
 @media (max-width: 500px) {
     #cards {
-        display: inline;
+        display: block;
     }
 }
 
 @media (min-width: 500px) and (max-width: 1000px) {
     #cards {
-        display: inline;
+        display: block;
     }
 }

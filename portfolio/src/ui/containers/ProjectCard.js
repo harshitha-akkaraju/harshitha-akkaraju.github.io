@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-// import CSS from './ProjectCardCSS';
 import './ProjectCard.css';
 
 /// Template for project cards on the landing page
 class ProjectCard extends Component {
 	render() {
 		return(
-			<div className={"card"} id={"projectCard"} >
+			<div className={"card"}
+					 id={"projectCard"}>
 				<div id={"cardTop"}>
 					<img id={"img"}
 							 src={this.props.imgURL}
