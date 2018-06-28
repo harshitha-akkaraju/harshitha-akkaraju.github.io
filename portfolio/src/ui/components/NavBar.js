@@ -14,12 +14,12 @@ class NavBar extends Component {
 				<div className={"container"}>
 					<div className={"body"}>
 						<div id={"header"}>
-							<Link to={Routes.home}><p id={"nameLg"}>Harshitha Akkaraju</p></Link>
-							<Link to={Routes.home}><p id={"nameSm"}>Harshitha</p></Link>
+							<Link to={Routes.home} id={"nameLg"}>Harshitha Akkaraju</Link>
+							<Link to={Routes.home} id={"nameSm"}>Harshitha</Link>
 							<div className={"links"} style={styles}>
-								<Link to={Routes.home}><p className={"link"}>Projects</p></Link>
-								<Link to={Routes.home}><p className={"link"}>About</p></Link>
-								<Link to={Routes.home}><p className={"link"}>Resume</p></Link>
+								<Link to={Routes.home} className={"link"}>Projects</Link>
+								<Link to={Routes.home} className={"link"}>About</Link>
+								<Link to={Routes.home} className={"link"}>Resume</Link>
 							</div>
 						</div>
 					</div>
