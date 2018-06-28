@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import './Ohana.css';
-import Footer from './../components/Footer';
+import Demo from '../containers/Demo';
 
 class Ohana extends Component {
 	render() {
 		const sections = [
-			"Problem", "Defining Requirements", "Interaction Design",
+			"Problem", "Solution",
 			"Architectural Decisions", "Demo", "Takeaways"
 		];
+		const repoLink = 'https://github.com/INFO461-Team-Go/ohana';
 
 		return(
 				<div id={"body"}>
@@ -45,15 +46,14 @@ class Ohana extends Component {
 					</div>
 
 					<div>
-						<p className={"sectionTitle"}>Defining Requirements</p>
+						<p className={"sectionTitle"}>Solution</p>
 						<p>
-							We decided to work with a specific set of requirements in order to
-							ensure the successful translation of our vision and design for Ohana.
+							Ohana is an Amazon Alexa skill that offers a refreshing way of
+							managing chores among roommates. The Ohana web app can be used to
+							distribute tasks among roommates. Users can then ask the Alexa
+							skill for quick reminders on what to do and record their completed
+							tasks.
 						</p>
-					</div>
-
-					<div>
-						<p className={"sectionTitle"}>Interaction Design</p>
 					</div>
 
 					<div>
@@ -107,6 +107,7 @@ class Ohana extends Component {
 
 						<div>
 							<p className={"sectionTitle"}>Demo</p>
+							<Demo embedCode={'i6oRzw1Durs?ecver=1'}/>
 						</div>
 
 						<div>
@@ -172,6 +173,8 @@ class Ohana extends Component {
 								dealing with the data, and one handling user queries.
 							</p>
 						</div>
+
+						<a href={repoLink} className={"btn btn-primary"}>View on Github</a>
 					</div>
 				</div>
 		);
