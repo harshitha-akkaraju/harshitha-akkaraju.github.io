@@ -14,7 +14,7 @@ class ProjectCard extends Component {
 					/>
 				</div>
 				<div className="card-body">
-					<h5 id={"title"}>{this.props.title}</h5>
+					<p id={"title"}>{this.props.title}</p>
 					<p id={"blurb"}>{this.props.blurb}</p>
 				</div>
 			</div>

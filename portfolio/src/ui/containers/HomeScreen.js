@@ -12,9 +12,7 @@ class HomeScreen extends Component {
 					<div className={"sections"}>
 						<Section title={"Projects"}
 										 history={this.props.history}/>
-						<Section title={"Projects"}
-										 history={this.props.history}/>
-						<Section title={"Projects"}
+						<Section title={"Organizations"}
 										 history={this.props.history}/>
 					</div>
 					<Footer/>

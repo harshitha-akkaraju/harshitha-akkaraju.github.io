@@ -1,17 +1,24 @@
-.body {
-    fontFamily: Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+#introBody {
+    font-family: Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     line-height: 1.5;
-    margin-left: auto;
-    margin-right: auto;
+    height: 35%;
 }
 
-#header {
-    padding-top: 5vh;
-    width: 100%;
+#introBarHeader {
+    padding: 3% 15% 0 15%;
     display: flex;
-    justify-content: space-evenly;
-    font-size: 1em;
+    justify-content: space-between !important;
+    font-size: 1.1em;
     font-weight: 500;
+}
+
+#introBarHeader a {
+    color: #7272ab;
+}
+
+#introBarHeader a:hover {
+    text-decoration: none;
+    color: #b1769b;
 }
 
 .links {
@@ -22,12 +29,34 @@
     display: inline-block;
 }
 
+.text {
+    margin: 2%;
+}
+
+.text a {
+    color: #55769A;
+}
+
+.text a:hover {
+    color: #7A768E;
+}
+
 .pitch {
-    padding-top: 3vh;
-    padding-bottom: 3vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    width: 60%;
     margin: auto;
-    max-width: 65vw;
+    font-weight: 400;
+    font-size: 1.25em;
+}
+
+.currRole {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    margin: auto;
+    width: 60%;
     font-weight: 300;
+    font-size: 1.20em;
 }
 
 #nameLg {
@@ -38,8 +67,12 @@
     display: none;
 }
 
-/* change the nav bar's appearance on smaller screens */
-@media (max-width: 375px) {
+/* don't show full name on small mobile devices */
+@media (max-width: 414px) and (min-width: 320px) {
+    #introBody {
+        height: 70%;
+    }
+
     #nameSm {
         display: block;
     }
@@ -48,8 +81,22 @@
         display: none;
     }
 
-    .link {
+    .pitch {
+        width: 75%;
+        font-size: 1.2em;
+    }
 
+    .currRole {
+        width: 75%;
+        font-size: 1.10em;
     }
 }
 
+/**
+    reduce the padding on intro bar
+ */
+@media (width: 1024px) {
+    #introBarHeader {
+        padding: 3% 3% 0 3%;
+    }
+}

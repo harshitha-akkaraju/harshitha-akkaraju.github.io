@@ -9,11 +9,10 @@ class NavBar extends Component {
 		let styles = {
 			cursor: 'pointer'
 		};
-
 		return(
-				<div className={"container"}>
-					<div className={"body"}>
-						<div id={"header"}>
+				<div>
+					<div id={"navBarBody"}>
+						<div id={"navBarHeader"}>
 							<Link to={Routes.home} id={"nameLg"}>Harshitha Akkaraju</Link>
 							<Link to={Routes.home} id={"nameSm"}>Harshitha</Link>
 							<div className={"links"} style={styles}>

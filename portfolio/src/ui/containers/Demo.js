@@ -8,7 +8,7 @@ class Demo extends Component {
 		return(
 
 				<div className={"demo"}>
-					<iframe src={videoSrc} className={"frame"}></iframe>
+					<iframe src={videoSrc} className={"frame"} title={"demo"}></iframe>
 				</div>
 		)
 	}

@@ -1,11 +1,7 @@
 #component {
-    background-color: #cacfd6;
     padding: 3%;
     width: 100vw;
     position: relative;
-    left: 0;
-    right: 0;
-    bottom: 0;
 }
 
 .center {
@@ -18,7 +14,26 @@
 }
 
 .icon {
-    width: 45px;
-    height: 45px;
-    padding: 15%;
+    width: 40px;
+    height: 40px;
+    padding: 20%;
+    fill: #b1769b;
+}
+
+.icon:hover {
+    text-decoration: none;
+    fill: #b1769b;
+}
+
+/**
+    increase the footer size on an iPad
+ */
+@media (width: 1024px) {
+    #component {
+        height: 25vh;
+    }
+
+    #footerContent {
+        padding: 7% 0px 7% 0px;
+    }
 }

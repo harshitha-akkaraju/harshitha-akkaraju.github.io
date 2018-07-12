@@ -1,15 +1,24 @@
-.body {
-    fontFamily: Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+#navBarBody {
+    font-family: Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     line-height: 1.5;
+    max-height: 50vh;
 }
 
-#header {
-    width: 100%;
-    padding-top: 5vh;
+#navBarHeader {
+    padding: 3% 15% 0 15%;
     display: flex;
-    justify-content: space-around;
-    font-size: 1em;
+    justify-content: space-between !important;
+    font-size: 1.1em;
     font-weight: 500;
+}
+
+#navBarHeader a {
+    color: #7272ab;
+}
+
+#navBarHeader a:hover {
+    text-decoration: none;
+    color: #b1769b;
 }
 
 .links {
@@ -30,8 +39,12 @@
     display: none;
 }
 
-/* change the nav bar's appearance on smaller screens */
-@media (max-width: 450px) {
+/* don't show full name on small mobile devices */
+@media (max-width: 414px) and (min-width: 320px) {
+    #navBarHeader {
+        padding: 3% 10% 0 10%;
+    }
+
     #nameSm {
         display: block;
     }
@@ -39,9 +52,18 @@
     #nameLg {
         display: none;
     }
-
-    .link {
-        margin-left: 5%;
-    }
 }
 
+/**
+    reduce the padding on intro bar
+ */
+@media (width: 1024px) {
+    .link {
+        display: inline-block;
+        margin-left: 7%;
+    }
+
+    #navBarHeader {
+        padding: 3% 3% 0 3%;
+    }
+}

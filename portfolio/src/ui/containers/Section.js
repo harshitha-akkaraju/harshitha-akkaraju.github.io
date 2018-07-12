@@ -14,7 +14,7 @@ class Section extends Component {
 			content = Projects;
 		}
 		return(
-			<div id={"sectionBody"} className={"container"}>
+			<div id={"sectionBody"}>
 				<p id={"heading"}>{this.props.title}</p>
 				<div id={"cards"}>
 					{

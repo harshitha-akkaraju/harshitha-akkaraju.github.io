@@ -1,9 +1,9 @@
-#body {
+.projBody {
     fontFamily: Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     line-height: 1.5;
-    width: 70%;
+    width: 100%;
     height: auto;
-    margin: 2% auto 2% auto;
+    margin: auto; /* TODO: Change the margin */
 }
 
 /* TODO: Add more styles */
@@ -44,4 +44,9 @@
     display: block;
     width: 50%;
     margin: 1% auto 1% auto;
+}
+
+.ohanaColorBg {
+    padding: 0 auto 0 auto;
+    background-color: #d6e5e3;
 }

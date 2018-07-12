@@ -11,13 +11,24 @@ class Ohana extends Component {
 		const repoLink = 'https://github.com/INFO461-Team-Go/ohana';
 
 		return(
-				<div id={"body"}>
+				<div className={"projBody"}>
 					{/* TODO: Add an image */}
 
 					<div className={"pageHeading"}>
 						<p className={"projectName"}>Ohana</p>
 						<p className={"caption"}>Spring 2018</p>
 					</div>
+
+					<div>
+						<p className={"sectionTitle"}>Introduction</p>
+						<p>
+							In Spring 2018, I took Cooperative Software Development taught by
+							Microsoft Senior Researcher Andrew Begel. Throughout the quarter,
+							my team and I worked on designing and developing an Amazon Alexa
+							Skill for chore management among college students.
+						</p>
+					</div>
+
 
 					<div>
 						<p className={"sectionTitle"}>Overview</p>
@@ -71,7 +82,7 @@ class Ohana extends Component {
 							{/* TODO: Add an Information flow img */}
 							<img src={require('./../../data/projects/Ohana/information-flow.png')}
 									 alt={'Information flow in Ohana'}
-									 className={"inlineFigure"}></img>
+									 className={"inlineFigure"} />
 							<p>
 								I solved this concern by enabling users to link the Ohana skill
 								to their Amazon email address. Then they would create an account
@@ -95,7 +106,7 @@ class Ohana extends Component {
 							{/* TODO: Add an Information flow img */}
 							<img src={require('./../../data/projects/Ohana/firebase-data-structure.png')}
 									 alt={'Firebase database schema'}
-									 className={"inlineFigure"}></img>
+									 className={"inlineFigure"} />
 							<p>
 								I reasoned that it would be best to make a separate module to
 								handle all the Firebase function calls on for the Alexa skill.
@@ -104,78 +115,79 @@ class Ohana extends Component {
 								to handle change.
 							</p>
 						</div>
-
-						<div>
-							<p className={"sectionTitle"}>Demo</p>
-							<Demo embedCode={'i6oRzw1Durs?ecver=1'}/>
-						</div>
-
-						<div>
-							<p className={"sectionTitle"}>Takeaways</p>
-							<p>
-								Designing and implementing a software project from the ground-up
-								taught me several things; here are a few notable takeaways.
-							</p>
-							{/* TODO: Change the styles on the takeaway and expand on this */}
-							<p className={"takeaway"}>
-								Well-defined requirements go a long way
-							</p>
-							<p>
-								I learned that having well-defined requirements is key to a
-								successful project. I like to think of product requirements as
-								a contract among teammates as we are working on the project.
-								Thus, having thorough requirements will ensure that everyone on
-								the team is working towards the same goal. I found the following
-								criteria to be helpful for writing good requirements.
-							</p>
-
-							<ul>
-								<li>Complete</li>
-								<li>Precise</li>
-								<li>Non-conflicting</li>
-								<li>Verifiable</li>
-							</ul>
-
-							<p>
-								As I was working on this project, I noticed that requirements
-								evolve as we gain a better understanding of our users and
-								revise our design decisions accordingly.
-							</p>
-							{/* TODO: Change the styles on the takeaway and expand on this */}
-							<p className={"takeaway"}>
-								Deliberate software architecture
-							</p>
-							<p>
-								In class, we discussed the idea of “spaghetti code” – code
-								bases where all the encapsulation strategies have failed
-								resulting in architectures with multiple cross cutting
-								concerns. As I was working on this project, I strived to work
-								towards a robust system that would be flexible enough to
-								handle change. I found myself spending plenty of time thinking
-								about the organization and architecture of our product.
-								<br/><br/>
-								Our vision for the minimal viable product (MVP) was a usable
-								Alexa skill along with a web application. The rationale for a
-								web application emerged from my experiences with the voice
-								interaction model with Alexa. The voice interface on Alexa
-								is not entirely conversational; for something complex like a
-								chore management app, a lot of burden might be on the user to
-								direct the Alexa skill. Thus, we decided to simplify the user
-								experience by dividing our product into two components the
-								Alexa skill, and a web app to go along with it.
-
-								I took complete ownership of the Ohana Alexa Skill both as a
-								voice interaction designer, and an engineer. There were two main
-								parts to the Ohana skill; listening for user input and getting
-								Alexa to behave accordingly and interacting with user data on
-								Firebase. In architecting code for the Alexa skill, I reasoned
-								that it would make the most sense to have two components one
-								dealing with the data, and one handling user queries.
-							</p>
-						</div>
-
-						<a href={repoLink} className={"btn btn-primary"}>View on Github</a>
 					</div>
+
+					<div>
+						<p className={"sectionTitle"}>Demo</p>
+						<Demo embedCode={'IgGqqBjWgzU?ecver=1'}/>
+						<Demo embedCode={'i6oRzw1Durs?ecver=1'}/>
+					</div>
+
+					<div>
+						<p className={"sectionTitle"}>Takeaways</p>
+						<p>
+							Designing and implementing a software project from the ground-up
+							taught me several things; here are a few notable takeaways.
+						</p>
+						{/* TODO: Change the styles on the takeaway and expand on this */}
+						<p className={"takeaway"}>
+							Well-defined requirements go a long way.
+						</p>
+						<p>
+							I learned that having well-defined requirements is key to a
+							successful project. I view product requirements as
+							a contract among teammates as we are working on the project.
+							Thus, having thorough requirements will ensure that everyone on
+							the team is working towards the same goal. I found the following
+							criteria to be helpful for writing good requirements.
+						</p>
+
+						<ul>
+							<li>Complete</li>
+							<li>Precise</li>
+							<li>Non-conflicting</li>
+							<li>Verifiable</li>
+						</ul>
+
+						<p>
+							As I was working on this project, I noticed that requirements
+							evolve as we gain a better understanding of our users and
+							revise our design decisions accordingly.
+						</p>
+						{/* TODO: Change the styles on the takeaway and expand on this */}
+						<p className={"takeaway"}>
+							Deliberate software architecture
+						</p>
+						<p>
+							In class, we discussed the idea of “spaghetti code” – code
+							bases where all the encapsulation strategies have failed
+							resulting in architectures with multiple cross cutting
+							concerns. As I was working on this project, I strived to work
+							towards a robust system that would be flexible enough to
+							handle change. I found myself spending plenty of time thinking
+							about the organization and architecture of our product.
+							<br/><br/>
+							Our vision for the minimal viable product (MVP) was a usable
+							Alexa skill along with a web application. The rationale for a
+							web application emerged from my experiences with the voice
+							interaction model with Alexa. The voice interface on Alexa
+							is not entirely conversational; for something complex like a
+							chore management app, a lot of burden might be on the user to
+							direct the Alexa skill. Thus, we decided to simplify the user
+							experience by dividing our product into two components the
+							Alexa skill, and a web app to go along with it.
+
+							I took complete ownership of the Ohana Alexa Skill both as a
+							voice interaction designer, and an engineer. There were two main
+							parts to the Ohana skill; listening for user input and getting
+							Alexa to behave accordingly and interacting with user data on
+							Firebase. In architecting code for the Alexa skill, I reasoned
+							that it would make the most sense to have two components one
+							dealing with the data, and one handling user queries.
+						</p>
+					</div>
+
+					<a href={repoLink} className={"btn btn-primary"}>View on Github</a>
 				</div>
 		);
 	}
