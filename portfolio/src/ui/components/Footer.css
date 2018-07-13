@@ -14,15 +14,16 @@
 }
 
 .icon {
+    font-size: 1.5em;
     width: 40px;
     height: 40px;
     padding: 20%;
-    fill: #b1769b;
+    color: #7272ab;
 }
 
 .icon:hover {
     text-decoration: none;
-    fill: #b1769b;
+    color: #b1769b;
 }
 
 /**

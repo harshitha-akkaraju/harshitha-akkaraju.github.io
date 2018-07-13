@@ -16,13 +16,13 @@ class Footer extends Component {
 						<p className={"center"}>© 2018 Harshitha Akkaraju All Rights Reserved</p>
 						<div className={"links"}>
 							<a href={Routes.github}>
-								<img src={Github} alt={'link to github'} className={'icon'}></img>
+								<i className="fab fa-github icon"></i>
 							</a>
 							<a href={Routes.linkedin}>
-								<img src={Linkedin} alt={'link to linkedin page'} className={'icon'}></img>
+								<i className="fab fa-linkedin-in icon"></i>
 							</a>
 							<a href={Routes.home}>
-								<img src={Email} alt={'email address'} className={'icon'}></img>
+								<i className="fas fa-paper-plane icon"></i>
 							</a>
 						</div>
 					</div>
