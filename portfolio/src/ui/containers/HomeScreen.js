@@ -10,9 +10,7 @@ class HomeScreen extends Component {
 				<div>
 					<IntroBar history={this.props.history}/>
 					<div className={"sections"}>
-						<Section title={"Projects"}
-										 history={this.props.history}/>
-						<Section title={"Organizations"}
+						<Section title={"Selected Projects"}
 										 history={this.props.history}/>
 					</div>
 					<Footer/>

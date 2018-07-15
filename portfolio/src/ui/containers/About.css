@@ -1,0 +1,50 @@
+.aboutBody {
+    font-family: Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    line-height: 2;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 2% auto 2% auto;
+}
+
+div.polaroid {
+    margin: 2% auto 2% auto;
+    width: 40%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+}
+
+.about {
+    width: 50%;
+}
+
+.quickIntro {
+    font-size: 2em;
+    font-weight: bolder;
+    background-color: #e5e5ef;
+}
+
+/**
+    use these styles for devices no larger than
+    800px and no smaller then 320px
+**/
+@media (max-width: 800px) and (min-width: 320px){
+    .aboutBody {
+        display: block;
+    }
+
+    .about {
+        width: 100%;
+        margin: 5% auto 5% auto;
+    }
+
+    div.polaroid {
+        margin: 4% auto 4% auto;
+        width: 80%;
+    }
+}

@@ -5,8 +5,7 @@ import './ProjectCard.css';
 class ProjectCard extends Component {
 	render() {
 		return(
-			<div className={"card"}
-					 id={"projectCard"}>
+			<div className={"card projectCard"}>
 				<div id={"cardTop"}>
 					<img id={"img"}
 							 src={this.props.imgURL}

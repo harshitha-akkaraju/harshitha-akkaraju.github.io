@@ -10,7 +10,7 @@ class Section extends Component {
 		let content = [];
 		if (this.props.title === 'Organizations') {
 			content = Orgs;
-		} else if (this.props.title === 'Projects') {
+		} else if (this.props.title === 'Selected Projects') {
 			content = Projects;
 		}
 		return(

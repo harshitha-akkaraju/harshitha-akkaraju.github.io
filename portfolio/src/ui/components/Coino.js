@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Demo from '../containers/Demo';
-import './Ohana.css';
+import './Project.css';
 import './Coino.css';
 
 class Coino extends Component {
@@ -17,12 +17,12 @@ class Coino extends Component {
 				<div className={'projBody'}>
 					{/* TODO: Add an image */}
 
-					<div className={"pageHeading"}>
+					<div className={"projSection"}>
 						<p className={"projectName"}>Coino</p>
 						<p className={"caption"}>Winter 2018</p>
 					</div>
 
-					<div>
+					<div className={"projSection"}>
 						<p className={"sectionTitle"}>Introduction</p>
 						<p>
 							In Winter 2018, I took iOS Development taught by
@@ -32,7 +32,7 @@ class Coino extends Component {
 						</p>
 					</div>
 
-					<div>
+					<div className={"projSection"}>
 						<p className={"sectionTitle"}>Overview</p>
 						<ul>
 							{
@@ -43,7 +43,7 @@ class Coino extends Component {
 						</ul>
 					</div>
 
-					<div>
+					<div className={"projSection"}>
 						<p className={"sectionTitle"}>App Idea</p>
 						<p>
 							Coino provides an easy way to view cryptocurrencies and get alerts
@@ -57,7 +57,7 @@ class Coino extends Component {
 						</p>
 					</div>
 
-					<div>
+					<div className={"projSection"}>
 						<p className={"sectionTitle"}>User Stories</p>
 						<ul>
 							<li>
@@ -85,23 +85,23 @@ class Coino extends Component {
 						</ul>
 					</div>
 
-					<div>
+					<div className={"projSection"}>
 						<p className={"sectionTitle"}>Wireframes</p>
 						<iframe className={'wireframes'} src={figmaLink}
 										allowFullScreen />
 					</div>
 
-					<div>
+					<div className={"projSection"}>
 						<p className={"sectionTitle"}>Demo</p>
 						<p>Placeholder</p>
 					</div>
 
-					<div>
+					<div className={"projSection"}>
 						<p className={"sectionTitle"}>Takeaways</p>
 						<p>Placeholder</p>
-					</div>
 
-					<a href={repoLink} className={"btn btn-primary"}>View on Github</a>
+						<a href={repoLink} className={"btn btn-primary"}>View on Github</a>
+					</div>
 				</div>
 		);
 	}

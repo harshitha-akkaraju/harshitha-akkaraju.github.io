@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Ohana.css';
+import './Project.css';
 import Demo from '../containers/Demo';
 
 class Ohana extends Component {
@@ -14,12 +14,12 @@ class Ohana extends Component {
 				<div className={"projBody"}>
 					{/* TODO: Add an image */}
 
-					<div className={"pageHeading"}>
+					<div className={"projSection"}>
 						<p className={"projectName"}>Ohana</p>
 						<p className={"caption"}>Spring 2018</p>
 					</div>
 
-					<div>
+					<div className={"projSection"}>
 						<p className={"sectionTitle"}>Introduction</p>
 						<p>
 							In Spring 2018, I took Cooperative Software Development taught by
@@ -30,7 +30,7 @@ class Ohana extends Component {
 					</div>
 
 
-					<div>
+					<div className={"projSection"}>
 						<p className={"sectionTitle"}>Overview</p>
 						<ul>
 							{
@@ -41,7 +41,7 @@ class Ohana extends Component {
 						</ul>
 					</div>
 
-					<div>
+					<div className={"projSection"}>
 						<p className={"sectionTitle"}>Problem</p>
 						<p>
 							As young adults begin to share living spaces away from their
@@ -56,7 +56,7 @@ class Ohana extends Component {
 						</p>
 					</div>
 
-					<div>
+					<div className={"projSection"}>
 						<p className={"sectionTitle"}>Solution</p>
 						<p>
 							Ohana is an Amazon Alexa skill that offers a refreshing way of
@@ -67,7 +67,7 @@ class Ohana extends Component {
 						</p>
 					</div>
 
-					<div>
+					<div className={"projSection"}>
 						<p className={"sectionTitle"}>Architectural Decisions</p>
 						<div>
 							<p className={"subHeading"}>User Accounts</p>
@@ -117,13 +117,13 @@ class Ohana extends Component {
 						</div>
 					</div>
 
-					<div>
+					<div className={"projSection"}>
 						<p className={"sectionTitle"}>Demo</p>
 						<Demo embedCode={'IgGqqBjWgzU?ecver=1'}/>
 						<Demo embedCode={'i6oRzw1Durs?ecver=1'}/>
 					</div>
 
-					<div>
+					<div className={"projSection"}>
 						<p className={"sectionTitle"}>Takeaways</p>
 						<p>
 							Designing and implementing a software project from the ground-up
@@ -185,9 +185,9 @@ class Ohana extends Component {
 							that it would make the most sense to have two components one
 							dealing with the data, and one handling user queries.
 						</p>
-					</div>
 
-					<a href={repoLink} className={"btn btn-primary"}>View on Github</a>
+						<a href={repoLink} className={"btn btn-primary"}>View on Github</a>
+					</div>
 				</div>
 		);
 	}

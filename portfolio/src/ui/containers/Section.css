@@ -1,40 +1,33 @@
 #sectionBody {
     font-family: Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     line-height: 1.5;
-    padding: 1% 15% 0% 15%;
     margin: 0% auto 0% auto;
+    padding: 0 15% 0 15%;
+    width: 100%;
 }
 
 #heading {
-    font-size: 1.15em;
+    font-size: 1.25em;
     font-weight: bold;
-    margin-bottom: 0px;
     color: #4b425a;
+    margin: 1% 0% 1% 0;
 }
 
 #cards {
     display: flex;
-    justify-content: space-evenly;
-}
-
-.projectCard {
-    cursor: pointer;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 
 /* use these styles for devices smaller then 500px */
-@media (max-width: 823px) and (min-width: 320px){
+@media (max-width: 812px) and (min-width: 320px){
     #cards {
         display: block;
     }
 
     #sectionBody {
         padding: 0 3% 0 3%;
-    }
-}
-
-@media (min-width: 1024px) and (min-height: 1300px) {
-    #sectionBody {
-        height: 25vh;
+        margin: 0% auto 0% auto;
     }
 }
