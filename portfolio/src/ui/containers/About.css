@@ -29,6 +29,10 @@ div.polaroid {
     background-color: #e5e5ef;
 }
 
+.aboutText {
+    font-size: 1.1em;
+}
+
 /**
     use these styles for devices no larger than
     800px and no smaller then 320px

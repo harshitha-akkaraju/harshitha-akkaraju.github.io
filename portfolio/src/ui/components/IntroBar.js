@@ -20,8 +20,8 @@ class IntroBar extends Component {
 
 					<div className={"text"}>
 						<p className={"pitch"}>
-							I am a design-literate developer studying <b>Software Engineering </b>
-							and <b>HCI</b> at the University of Washington in Seattle.
+							I am a design-literate developer studying <span>Software Engineering </span>
+							and <span>Human Computer Interaction</span> at the University of Washington in Seattle.
 						</p>
 						<p className={"currRole"}>
 							I am currently developing research tools at the
