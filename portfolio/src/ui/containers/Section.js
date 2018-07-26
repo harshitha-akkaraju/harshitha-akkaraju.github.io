@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Orgs from './../../data/Organizations';
 import Projects from './../../data/Projects';
 import ProjectCard from './ProjectCard';
+import Divider from './../components/Divider';
 import './Section.css';
 
 class Section extends Component {

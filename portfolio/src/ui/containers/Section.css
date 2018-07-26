@@ -7,10 +7,12 @@
 }
 
 #heading {
-    font-size: 1.25em;
-    font-weight: bold;
-    color: #4b425a;
-    margin: 1% 0% 1% 0;
+    font-family: 'Gentium Basic', serif;
+    font-size: 1.30em;
+    font-weight: lighter;
+    color: #114b5f;
+    margin: 1% 0 1% 0;
+    text-align: left;
 }
 
 #cards {
@@ -28,5 +30,9 @@
     #sectionBody {
         padding: 0 3% 0 3%;
         margin: 0% auto 0% auto;
+    }
+
+    #heading {
+        margin: 2% 0 1% 5% !important;
     }
 }
