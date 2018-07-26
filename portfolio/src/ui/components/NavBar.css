@@ -1,19 +1,23 @@
 #navBarBody {
-    font-family: Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: 'Gentium Basic', serif;
     line-height: 1.5;
     max-height: 50vh;
+    font-size: 1.1em;
+    font-weight: 700;
 }
 
 #navBarHeader {
-    padding: 3% 15% 0 15%;
     display: flex;
-    justify-content: space-between !important;
-    font-size: 1.1em;
+    justify-content: space-around;
+    font-size: 1.2em;
+    margin: 0 auto 0 auto;
     font-weight: 500;
+    padding: 3% 0 0 0;
+    width: 100%;
 }
 
 #navBarHeader a {
-    color: #7272ab;
+    color: #55769A;
 }
 
 #navBarHeader a:hover {
@@ -21,9 +25,19 @@
     color: #b1769b;
 }
 
+.menu {
+    color: #55769A;
+    font-size: 1.25em;
+    padding: 0.5%;
+    display: none;
+}
+
+.menu:hover {
+    color: #b1769b;
+}
+
 .links {
     display: flex;
-    justify-content: space-evenly;
 }
 
 .link {
@@ -32,7 +46,7 @@
 }
 
 #nameLg {
-
+    margin-left: -9%;
 }
 
 #nameSm {
@@ -40,30 +54,40 @@
 }
 
 /* don't show full name on small mobile devices */
-@media (max-width: 414px) and (min-width: 320px) {
+@media (max-width: 640px) and (min-width: 320px) {
     #navBarHeader {
-        padding: 3% 10% 0 10%;
+        padding: 7% 0 3% 0;
     }
 
     #nameSm {
         display: block;
+        margin-left: -9%;
     }
 
     #nameLg {
         display: none;
+    }
+
+    .link {
+        display: none;
+    }
+
+    .menu {
+        display: inline-block;
     }
 }
 
 /**
     reduce the padding on intro bar
  */
-@media (width: 1024px) {
+@media (max-width: 1024px) and (min-width: 645px) {
     .link {
         display: inline-block;
         margin-left: 7%;
     }
 
     #navBarHeader {
-        padding: 3% 3% 0 3%;
+        padding: 5% 15% 2% 15%;
+        margin: auto;
     }
 }
