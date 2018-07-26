@@ -8,8 +8,8 @@ class Footer extends Component {
 		return(
 				<div id={"component"}>
 					<div id={"footerContent"}>
-						<p className={"center"}>© 2018 Harshitha Akkaraju All Rights Reserved</p>
-						<div className={"links"}>
+						<p className={"center"}>Built from scratch by Harshitha Akkaraju</p>
+						<div className={"footerLinks"}>
 							<a href={Routes.github}>
 								<i className="fab fa-github icon"/>
 							</a>
