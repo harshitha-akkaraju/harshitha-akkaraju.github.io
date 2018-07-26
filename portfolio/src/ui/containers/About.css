@@ -26,7 +26,7 @@ div.polaroid {
 .quickIntro {
     font-size: 2em;
     font-weight: bolder;
-    background-color: #e5e5ef;
+    background-color: #d6e5e3 /*#e5e5ef*/;
 }
 
 .aboutText {
