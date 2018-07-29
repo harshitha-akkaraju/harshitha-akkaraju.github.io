@@ -35,7 +35,7 @@ class About extends Component {
 
 								I feel strongly about improving equity in STEM and computing
 								education. As a student leader in the UW Society of Women Engineers
-								and Women in Informatics, I helped organize several events including
+								and Women in Informatics, I help organize several events including
 								programming workshops, networking events, and a hackathon.
 
 								<br/><br/>
