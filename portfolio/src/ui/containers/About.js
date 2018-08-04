@@ -45,8 +45,6 @@ class About extends Component {
 								want to collaborate or just want to reach out.
 							</span>
 							</p>
-
-							<button className={'btn btn-secondary'}>Explore work</button>
 						</div>
 					</div>
 					<Footer/>

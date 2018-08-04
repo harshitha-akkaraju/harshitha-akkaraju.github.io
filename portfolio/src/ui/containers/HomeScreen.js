@@ -17,9 +17,6 @@ class HomeScreen extends Component {
 						<p className={"currRole"}>
 							I am currently developing research tools at the
 							<a href={'http://faculty.washington.edu/ajko/students'}> Code and Cognition Lab</a>.
-							In the past, I worked with the
-							<a href={'https://tcat.cs.washington.edu/'}> Taskar Center for Accessible Technology </a>
-							in the Paul G. Allen School of Computer Science.
 						</p>
 					</div>
 					<div className={"sections"}>

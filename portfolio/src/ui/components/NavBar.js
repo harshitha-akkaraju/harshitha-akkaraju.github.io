@@ -41,14 +41,13 @@ class NavBar extends Component {
 							<Link to={Routes.home} id={"nameSm"}>Harshitha</Link>
 							<div className={"links"} style={styles}>
 								<i className="fas fa-bars menu" onClick={() => this.openMenu()}/>
-								<Link to={Routes.home} className={"link"}>Projects</Link>
 								<Link to={Routes.sandbox} className={"link"}>Sandbox</Link>
 								<Link to={Routes.about} className={"link"}>About</Link>
 								<Link to={Routes.home} className={"link"}>Resume</Link>
 							</div>
 						</div>
 					</div>
-					<Divider width={'80%'}/>
+					<Divider width={'70%'}/>
 				</div>
 		);
 	}

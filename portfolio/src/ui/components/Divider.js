@@ -5,7 +5,7 @@ class Divider extends Component {
 		let styles = {
 			borderTop: 'solid',
 			borderWidth: '1.5px',
-			borderColor: '#424874',
+			borderColor: '#c1c1c1',
 			width: this.props.width,
 			margin: '1.5% auto 1.5% auto'
 		};

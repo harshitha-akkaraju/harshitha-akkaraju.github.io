@@ -9,7 +9,12 @@ class SandboxView extends Component {
 		return(
 				<div>
 					<NavBar history={this.props.history} />
-					<p className={'description'}>I enjoy learning about <i>most</i> things tech. <br/> Here are a few of my side projects.</p>
+					<p className={'description'}>
+						I enjoy learning about <i>most</i> things tech.
+						<br/>
+						I am currently learning about the nuts and bolts of AI
+						to build a single player tic tac toe.
+					</p>
 					<div className={'projects'}>
 						<Section title={'Personal Projects'} props={this.props.history}/>
 					</div>
