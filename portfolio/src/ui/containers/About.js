@@ -28,8 +28,7 @@ class About extends Component {
 								I am a senior studying Informatics,
 								combination of systems design and software engineering, at the
 								University of Washington in Seattle. I am driven by the
-								potential technology offers to create new affordances. At the moment,
-								I am exploring my interest in cloud computing.
+								potential technology offers to create new affordances.
 
 								<br/><br/>
 
@@ -45,6 +44,11 @@ class About extends Component {
 								want to collaborate or just want to reach out.
 							</span>
 							</p>
+
+							<div className={'buttons'}>
+								<Link to={Routes.sandbox}><button className={'btn btn-secondary'}>Sandbox</button></Link>
+								<Link to={Routes.home}><button className={'btn btn-secondary'}>Resume</button></Link>
+							</div>
 						</div>
 					</div>
 					<Footer/>
