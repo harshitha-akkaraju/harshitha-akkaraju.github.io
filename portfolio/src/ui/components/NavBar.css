@@ -57,6 +57,7 @@
 @media (max-width: 640px) and (min-width: 320px) {
     #navBarHeader {
         padding: 7% 0 3% 0;
+        width: 90%;
     }
 
     #nameSm {
@@ -89,5 +90,6 @@
     #navBarHeader {
         padding: 5% 15% 2% 15%;
         margin: auto;
+        width: 80%;
     }
 }
