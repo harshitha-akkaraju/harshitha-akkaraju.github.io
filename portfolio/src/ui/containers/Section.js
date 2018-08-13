@@ -35,6 +35,7 @@ class Section extends Component {
 		let result = [];
 		Object.keys(this.state.content).map((key, index) => {
 			let item = this.state.content[key];
+			console.log(item.imgURL);
 			result.push(
 					<Link to={`/projects/${item.name}`} key={index}>
 						<ProjectCard title={item.name}
