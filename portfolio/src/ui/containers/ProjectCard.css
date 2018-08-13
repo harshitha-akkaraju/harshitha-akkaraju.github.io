@@ -2,7 +2,7 @@
     margin: 5% auto 5% auto;
     cursor: pointer;
     width: 20em;
-    height: 18em;
+    height: 22em;
     color: #161925;
 }
 
@@ -15,7 +15,7 @@
 }
 
 #cardTop {
-    height: 50%;
+    height: 23vh;
     border-bottom: 1px solid #c1c1c1;
 }
 
@@ -50,7 +50,11 @@ a:hover {
     .projectCard {
         margin: 5% auto 0 auto;
         width: 16em;
-        height: 20em;
+        height: 22em;
+    }
+
+    #img {
+        width: 100%;
     }
 }
 
@@ -59,5 +63,9 @@ a:hover {
         margin: 5% auto 0 auto;
         width: 15em;
         height: 22em;
+    }
+
+    #img {
+        width: 100%;
     }
 }
