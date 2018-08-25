@@ -38,6 +38,7 @@ class Section extends Component {
 			result.push(
 					<Link to={`/projects/${item.name}`} key={index}>
 						<ProjectCard title={item.name}
+												 when={item.when}
 												 imgURL={item.imgURL}
 												 blurb={item.position}
 												 history={this.props.history}/>
@@ -54,6 +55,7 @@ class Section extends Component {
 			result.push(
 					<a href={item.projectURL} key={index}>
 						<ProjectCard title={item.name}
+												 when={item.when}
 												 imgURL={item.imgURL}
 												 blurb={item.position}
 												 history={this.props.history}/>

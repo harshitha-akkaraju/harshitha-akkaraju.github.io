@@ -14,6 +14,7 @@ class ProjectCard extends Component {
 				</div>
 				<div className="card-body">
 					<p id={"title"}>{this.props.title}</p>
+					<p className="date"><i>{this.props.when}</i></p>
 					<p id={"blurb"}>{this.props.blurb}</p>
 				</div>
 			</div>
