@@ -27,7 +27,6 @@ class NavBar extends Component {
 		currentLocation = currentLocation.substring(1);
 		let activeStyles = [{}, {}, {}, {}];
 		if (currentLocation === 'about') {
-			console.log("here")
 			activeStyles[2] = {color: 'color: #b1769b'};
 		} else if (currentLocation === 'sandbox') {
 			activeStyles[1] = {color: 'color: #b1769b'};

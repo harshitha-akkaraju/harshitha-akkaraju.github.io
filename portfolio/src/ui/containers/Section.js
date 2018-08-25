@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
-import Orgs from './../../data/Organizations';
 import Projects from './../../data/Projects';
 import SideProjects from './../../data/sandbox/ProjectDescriptions';
 import ProjectCard from './ProjectCard';
@@ -29,7 +28,7 @@ class Section extends Component {
 	ProjectTypes = {
 		selected: 'Selected Projects',
 		side: 'Personal Projects'
-	}
+	};
 
 	compileSelected() {
 		let result = [];

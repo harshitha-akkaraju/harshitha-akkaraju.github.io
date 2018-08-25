@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Demo from '../containers/Demo';
+// import Demo from '../containers/Demo';
 import './Project.css';
 import './Coino.css';
 
@@ -88,7 +88,7 @@ class Coino extends Component {
 					<div className={"projSection"}>
 						<p className={"sectionTitle"}>Wireframes</p>
 						<iframe className={'wireframes'} src={figmaLink}
-										allowFullScreen />
+										allowFullScreen/>
 					</div>
 
 					<div className={"projSection"}>
