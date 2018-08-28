@@ -10,10 +10,10 @@ class SandboxView extends Component {
 				<div>
 					<NavBar history={this.props.history} />
 					<p className={'description'}>
-						I enjoy learning about <i>most</i> things tech.
+						I like to delve into code and algorithms in my free time.
 						<br/>
-						I am currently learning about the nuts and bolts of AI
-						to build a single player tic tac toe.
+						Here are some of my recent side projects. For a complete list,
+						visit my Github page.
 					</p>
 					<div className={'projects'}>
 						<Section title={'Personal Projects'} props={this.props.history}/>

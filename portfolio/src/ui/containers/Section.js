@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Projects from './../../data/Projects';
 import SideProjects from './../../data/sandbox/ProjectDescriptions';
 import ProjectCard from './ProjectCard';
+import LargeCard from './LargeCard';
 import './Section.css';
 
 class Section extends Component {
@@ -52,13 +53,13 @@ class Section extends Component {
 		Object.keys(this.state.content).map((key, index) => {
 			let item = this.state.content[key];
 			result.push(
-					<a href={item.projectURL} key={index}>
-						<ProjectCard title={item.name}
-												 when={item.when}
-												 imgURL={item.imgURL}
-												 blurb={item.position}
-												 history={this.props.history}/>
-					</a>
+					<Link to={item.projectURL} key={index}>
+						<LargeCard title={item.name}
+											 description={item.position}
+											 completed={item.when}
+											 history={this.props.history}
+											 imgURL={item.imgURL}/>
+					</Link>
 			);
 		});
 		return result;

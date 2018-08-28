@@ -12,10 +12,6 @@ class NavBar extends Component {
 		}
 	}
 
-	openMenu() {
-		this.setState({openMenu: true});
-	}
-
 	render() {
 		// can't over-ride id selector
 		let styles = {
@@ -35,11 +31,10 @@ class NavBar extends Component {
 		return(
 				<div>
 					<div id={"navBarBody"}>
-						<div id={"navBarHeader"}>
+						<div className={"navBarHeader"}>
 							<Link to={Routes.home} id={"nameLg"}>Harshitha Akkaraju</Link>
 							<Link to={Routes.home} id={"nameSm"}>Harshitha</Link>
 							<div className={"links"} style={styles}>
-								<i className="fas fa-bars menu" onClick={() => this.openMenu()}/>
 								<Link to={Routes.sandbox} className={"link"}>Sandbox</Link>
 								<Link to={Routes.about} className={"link"}>About</Link>
 								<Link to={Routes.home} className={"link"}>Resume</Link>
