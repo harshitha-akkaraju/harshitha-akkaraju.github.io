@@ -52,14 +52,15 @@ class Section extends Component {
 		let result = [];
 		Object.keys(this.state.content).map((key, index) => {
 			let item = this.state.content[key];
+			console.log(item.projectURL);
 			result.push(
-					<Link to={item.projectURL} key={index}>
+					<a href={item.projectURL} key={index}>
 						<LargeCard title={item.name}
 											 description={item.position}
 											 completed={item.when}
 											 history={this.props.history}
 											 imgURL={item.imgURL}/>
-					</Link>
+					</a>
 			);
 		});
 		return result;
