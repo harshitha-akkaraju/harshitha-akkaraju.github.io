@@ -1,26 +1,27 @@
 #sectionBody {
     font-family: Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     line-height: 1.5;
-    margin: 0% auto 0% auto;
+    margin: auto;
     padding: 0 15% 0 15%;
-    width: 90%;
+    width: 100%;
 }
 
 #heading {
-    font-family: Roboto;
+    font-family: 'Roboto Slab', serif;
+    /*font-family: Roboto;*/
     font-size: 1.20em;
     font-weight: lighter;
     color: #114b5f;
-    margin: 1% 0 1% 0;
     text-align: left;
+    margin: 0;
 }
 
 #cards {
     margin: auto;
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 /* use these styles for devices smaller then 500px */
@@ -30,7 +31,7 @@
     }
 
     #sectionBody {
-        padding: 0 3% 0 3%;
+        padding: 0 10% 0 10%;
         margin: 0% auto 0% auto;
     }
 
