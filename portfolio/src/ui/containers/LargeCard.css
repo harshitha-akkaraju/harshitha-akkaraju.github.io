@@ -5,6 +5,7 @@
     margin: 3% 0 3% 0;
     color: #161925;
     transition: all .2s ease-in-out;
+    height: 300px
 }
 
 .row:hover {
@@ -23,12 +24,12 @@
 
 .shell {
     width: 40%;
-    height: auto;
 }
 
 .descShell {
     width: 60%;
-    height: auto;
+    max-height: 100%;
+    overflow-y: scroll;
 }
 
 .image {

@@ -28,7 +28,7 @@ class Section extends Component {
 
 	ProjectTypes = {
 		selected: 'Selected Projects',
-		side: 'Personal Projects'
+		side: 'Sandbox'
 	};
 
 	compileSelected() {

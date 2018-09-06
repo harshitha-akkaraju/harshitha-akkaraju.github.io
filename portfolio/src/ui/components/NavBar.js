@@ -22,21 +22,24 @@ class NavBar extends Component {
 		let currentLocation = this.props.history.location.pathname;
 		currentLocation = currentLocation.substring(1);
 		let activeStyles = [{}, {}, {}, {}];
-		if (currentLocation === 'about') {
-			activeStyles[2] = {color: 'color: #b1769b'};
+		console.log(currentLocation);
+		if (currentLocation === "") {
+			activeStyles[0] = {color: '#b1769b', fontWeight: 'bold'};
+		} else if (currentLocation === 'about') {
+			activeStyles[2] = {color: '#b1769b', fontWeight: 'bold'};
 		} else if (currentLocation === 'sandbox') {
-			activeStyles[1] = {color: 'color: #b1769b'};
+			activeStyles[1] = {color: '#b1769b', fontWeight: 'bold'};
 		}
 
 		return(
 				<div>
 					<div id={"navBarBody"}>
 						<div className={"navBarHeader"}>
-							<Link to={Routes.home} id={"nameLg"}>Harshitha Akkaraju</Link>
-							<Link to={Routes.home} id={"nameSm"}>Harshitha</Link>
+							<Link to={Routes.home} id={"nameLg"} style={activeStyles[0]}>Harshitha Akkaraju</Link>
+							<Link to={Routes.home} id={"nameSm"} style={activeStyles[0]}>Harshitha</Link>
 							<div className={"links"} style={styles}>
-								<Link to={Routes.sandbox} className={"link"}>Sandbox</Link>
-								<Link to={Routes.about} className={"link"}>About</Link>
+								<Link to={Routes.sandbox} className={"link"} style={activeStyles[1]}>Sandbox</Link>
+								<Link to={Routes.about} className={"link"} style={activeStyles[2]}>About</Link>
 								<Link to={Routes.home} className={"link"}>Resume</Link>
 							</div>
 						</div>

@@ -17,7 +17,7 @@ class SandboxView extends Component {
 						visit my <a href={Routes.github}>Github</a> page.
 					</p>
 					<div className={'projects'}>
-						<Section title={'Personal Projects'} props={this.props.history}/>
+						<Section title={'Sandbox'} props={this.props.history}/>
 					</div>
 					<Footer/>
 				</div>
