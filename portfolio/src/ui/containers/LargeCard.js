@@ -7,7 +7,7 @@ class LargeCard extends Component {
 				<div className={"row"}>
 					<div className={"shell"}>
 						{/*style={{backgroundImage: `url(${this.props.imgURL})`, backgroundSize: 'cover'}}*/}
-						<img className={"image"} src={this.props.imgURL}/>
+						<img className={"image"} src={this.props.imgURL} alt={this.props.title}/>
 					</div>
 					<div className="card-body descShell">
 						<p className={"title"}>{this.props.title}</p>

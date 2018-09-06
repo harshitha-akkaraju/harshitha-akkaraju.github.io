@@ -19,7 +19,7 @@ class HomeScreen extends Component {
 							<a href={'http://faculty.washington.edu/ajko/students'}> Code and Cognition Lab</a> directed by Dr. Andy J. Ko.
 						</p>
 					</div>
-					<div className={"sections"}>
+					<div className={"sections"} id={"selectedProjects"}>
 						<Section title={"Selected Projects"}
 										 history={this.props.history}/>
 					</div>

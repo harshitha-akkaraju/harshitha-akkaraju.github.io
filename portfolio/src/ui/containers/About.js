@@ -40,13 +40,13 @@ class About extends Component {
 								<br/><br/>
 
 								I am always open to getting involved in interesting projects.
-								Email me at <Link to={Routes.email}>akkarh@uw.edu</Link> if you
+								Email me at <a href={Routes.email}>akkarh@uw.edu</a> if you
 								want to collaborate or just want to reach out.
 							</span>
 							</p>
 
 							<div className={'buttons'}>
-								<Link to={Routes.sandbox}><button className={'btn btn-secondary'}>Sandbox</button></Link>
+								<a href={"#selectedProjects"}><button className={'btn btn-secondary'}>Projects</button></a>
 								<Link to={Routes.home}><button className={'btn btn-secondary'}>Resume</button></Link>
 							</div>
 						</div>

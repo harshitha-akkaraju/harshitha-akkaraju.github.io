@@ -17,18 +17,20 @@ class NavBar extends Component {
 		let styles = {
 			cursor: 'pointer'
 		};
+		let project = Routes.sandbox;
+		let tabName = "Sandbox";
 
 		// current tab
 		let currentLocation = this.props.history.location.pathname;
 		currentLocation = currentLocation.substring(1);
 		let activeStyles = [{}, {}, {}, {}];
-		console.log(currentLocation);
 		if (currentLocation === "") {
 			activeStyles[0] = {color: '#b1769b', fontWeight: 'bold'};
 		} else if (currentLocation === 'about') {
 			activeStyles[2] = {color: '#b1769b', fontWeight: 'bold'};
 		} else if (currentLocation === 'sandbox') {
-			activeStyles[1] = {color: '#b1769b', fontWeight: 'bold'};
+			project = Routes.home;
+			tabName = "Projects"
 		}
 
 		return(
@@ -38,7 +40,7 @@ class NavBar extends Component {
 							<Link to={Routes.home} id={"nameLg"} style={activeStyles[0]}>Harshitha Akkaraju</Link>
 							<Link to={Routes.home} id={"nameSm"} style={activeStyles[0]}>Harshitha</Link>
 							<div className={"links"} style={styles}>
-								<Link to={Routes.sandbox} className={"link"} style={activeStyles[1]}>Sandbox</Link>
+								<Link to={project} className={"link"} style={activeStyles[1]}>{tabName}</Link>
 								<Link to={Routes.about} className={"link"} style={activeStyles[2]}>About</Link>
 								<Link to={Routes.home} className={"link"}>Resume</Link>
 							</div>

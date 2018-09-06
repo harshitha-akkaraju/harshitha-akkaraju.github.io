@@ -63,6 +63,7 @@
 @media (max-width: 414px) {
     .row {
         display: inline-block;
+        height: auto;
     }
 
     .descShell {

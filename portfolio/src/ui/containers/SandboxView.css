@@ -12,3 +12,26 @@
     padding: 1% 0 3% 0;
     background-color: #E5F1F0;
 }
+
+.chevron {
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.chevronbg {
+    display: none;
+    text-align: center;
+    background-color: #55769a;
+    border-radius: 50%;
+    width: 3em;
+    height: 3em;
+    line-height: 48px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 7%;
+    right: 5%;
+}
+
+.chevronbg:hover {
+    background-color: #b1769b;
+}

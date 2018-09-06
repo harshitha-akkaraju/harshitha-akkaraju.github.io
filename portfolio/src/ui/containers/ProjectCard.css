@@ -2,9 +2,11 @@
     margin: 5% auto 5% auto;
     cursor: pointer;
     width: 20em;
-    height: auto;
+    height: 29em;
     color: #161925;
     transition: all .2s ease-in-out;
+    border: none;
+    border-radius: 10px;
 }
 
 .projectCard:hover {
@@ -28,15 +30,15 @@
 }
 
 #cardTop {
-    height: 20%;
-    border-bottom: 1px solid #c1c1c1;
+    border-bottom: 1px;
+    height: 250px;
 }
 
 #blurb {
     font-family: Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     line-height: 1.5;
     width: 80%;
-    margin: 0px
+    margin: 0px;
 }
 
 #img {
@@ -44,6 +46,9 @@
     height: 100%;
     margin: auto;
     display: block;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
 }
 
 a:hover {
@@ -51,7 +56,7 @@ a:hover {
 }
 
 .card-body {
-    height: auto;
+    height: 100%;
 }
 
 .card-body:hover {

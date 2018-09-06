@@ -52,7 +52,6 @@ class Section extends Component {
 		let result = [];
 		Object.keys(this.state.content).map((key, index) => {
 			let item = this.state.content[key];
-			console.log(item.projectURL);
 			result.push(
 					<a href={item.projectURL} key={index}>
 						<LargeCard title={item.name}
