@@ -42,7 +42,7 @@ class NavBar extends Component {
 							<div className={"links"} style={styles}>
 								<Link to={project} className={"link"} style={activeStyles[1]}>{tabName}</Link>
 								<Link to={Routes.about} className={"link"} style={activeStyles[2]}>About</Link>
-								<Link to={Routes.home} className={"link"}>Resume</Link>
+								<a href={Routes.resume} className={"link"} target={"_blank"}>Resume</a>
 							</div>
 						</div>
 					</div>

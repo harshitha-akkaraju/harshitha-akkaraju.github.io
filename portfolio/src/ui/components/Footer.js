@@ -10,14 +10,17 @@ class Footer extends Component {
 					<div id={"footerContent"}>
 						<p className={"center"}>Built from scratch by Harshitha Akkaraju</p>
 						<div className={"footerLinks"}>
+							<a href={Routes.email}>
+								<i className="fas fa-envelope icon"/>
+							</a>
 							<a href={Routes.github}>
 								<i className="fab fa-github icon"/>
 							</a>
 							<a href={Routes.linkedin}>
 								<i className="fab fa-linkedin-in icon"/>
 							</a>
-							<a href={Routes.email}>
-								<i className="fas fa-paper-plane icon"/>
+							<a href={Routes.medium}>
+								<i className="fab fa-medium icon"/>
 							</a>
 						</div>
 					</div>

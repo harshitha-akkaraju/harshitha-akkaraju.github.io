@@ -25,9 +25,14 @@ div.polaroid {
 
 .quickIntro {
     font-size: 2em;
-    font-weight: bolder;
-    background-color: #E5F1F0 /*#e5e5ef*/;
+    font-weight: 300;
 }
+
+.highlight {
+    background-color: #E5F1F0;
+    background-image: linear-gradient(to right, #cce2df 0%, #E5F1F0 100%);
+}
+
 
 .aboutText {
     font-size: 1.1em;
@@ -39,6 +44,8 @@ div.polaroid {
     justify-content: space-between;
     width: 35%;
 }
+
+
 
 /**
     use these styles for devices no larger than

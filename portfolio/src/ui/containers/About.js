@@ -21,7 +21,7 @@ class About extends Component {
 
 						<div className={"about"}>
 							<p>
-								<span className={"quickIntro"}>Hello, there! <br/> I am Harshitha. </span>
+								<span className={"quickIntro highlight"}>Hello, there! <br/> I am Harshitha. </span>
 
 								<span className={"aboutText"}>
 								<br/>
@@ -29,7 +29,9 @@ class About extends Component {
 								combination of systems design and software engineering, at the
 								University of Washington in Seattle. I am driven by the
 								potential technology offers to create new affordances.
-
+								My experience lies in web development using ReactJS. I am
+								interested in contributing to distributed systems and machine
+								learning applications.
 								<br/><br/>
 
 								I feel strongly about improving equity in STEM and computing

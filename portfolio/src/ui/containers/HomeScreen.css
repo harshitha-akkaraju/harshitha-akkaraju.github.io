@@ -1,29 +1,18 @@
 .sections {
     padding: 1% 0 3% 0;
     background-color: #E5F1F0; /* #d6e5e3;*/
-    /*border-top: solid 1px #c1c1c1;
-    border-bottom: solid 1px #c1c1c1;*/
 }
 
 .text {
     margin: 1%;
     padding: 2%;
-}
-
-.text a {
-    color: #55769A;
-}
-
-.text a:hover {
-    color: #7A768E;
+    font-weight: 300;
 }
 
 .pitch {
-    padding-top: 2vh;
-    padding-bottom: 2vh;
+    padding-bottom: 1%;
     width: 70%;
     margin: 0 auto 0 auto;
-    font-weight: 400;
     font-size: 1.65em;
 }
 
@@ -32,10 +21,12 @@
     padding-bottom: 2vh;
     margin: 0 auto 0 auto;
     width: 70%;
-    font-weight: 300;
     font-size: 1.30em;
 }
 
+.standout {
+    color: #028090;
+}
 
 @media (max-width: 640px) and (min-width: 310px) {
     .pitch {
