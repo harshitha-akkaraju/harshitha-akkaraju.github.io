@@ -30,7 +30,6 @@ class SandboxView extends Component {
 		return(
 				<div>
 					<NavBar history={this.props.history} />
-					<div id={"chevron"} className={"chevronbg"} onClick={() => this.scrollToTop()}><i className="fas fa-chevron-up chevron"/></div>
 					<p className={'description'}>
 						I like to delve into code and algorithms in my free time.
 						<br/>
@@ -46,6 +45,7 @@ class SandboxView extends Component {
 						<Section title={'Sandbox'} props={this.props.history}/>
 					</div>
 					<Footer/>
+					<div id={"chevron"} className={"chevronbg"} onClick={() => this.scrollToTop()}><i className="fas fa-chevron-up chevron"/></div>
 				</div>
 		);
 	}
