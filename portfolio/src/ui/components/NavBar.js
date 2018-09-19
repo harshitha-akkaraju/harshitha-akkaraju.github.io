@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Routes from './../../data/Constants';
 import './NavBar.css';
 import Divider from './Divider';
+import Resume from './../../data/resume.pdf';
 
 class NavBar extends Component {
 	constructor(props) {
@@ -42,7 +43,7 @@ class NavBar extends Component {
 							<div className={"links"} style={styles}>
 								<Link to={project} className={"link"} style={activeStyles[1]}>{tabName}</Link>
 								<Link to={Routes.about} className={"link"} style={activeStyles[2]}>About</Link>
-								<a href={Routes.resume} className={"link"} target={"_blank"}>Resume</a>
+								<a href={Resume} className={"link"} target={"_blank"}>Resume</a>
 							</div>
 						</div>
 					</div>
