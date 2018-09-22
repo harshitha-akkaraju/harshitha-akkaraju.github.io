@@ -23,7 +23,7 @@ class Ohana extends Component {
 						</div>
 						<img className={'projImg'}
 								 alt={'project illustration'}
-								 src={'https://raw.githubusercontent.com/harshitha-akkaraju/harshitha-akkaraju.github.io/master/portfolio/src/images/ohana.png'}/>
+								 src={'https://raw.githubusercontent.com/harshitha-akkaraju/harshitha-akkaraju.github.io/master/portfolio/src/images/ohana-logo.png'}/>
 					</div>
 
 
