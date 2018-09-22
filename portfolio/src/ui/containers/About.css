@@ -45,7 +45,22 @@ div.polaroid {
     width: 35%;
 }
 
+.abtButton {
+    background-color: #fff;
+    border: solid 1px #028090;
+    border-radius: 3px;
+    font-size: 1em;
+    font-weight: 300;
+    height: 3em;
+    text-align: center;
+    color: #3f4045;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
 
+.abtButton:hover {
+    background-color: #E5F1F0;
+}
 
 /**
     use these styles for devices no larger than

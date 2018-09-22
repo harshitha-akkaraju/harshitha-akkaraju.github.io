@@ -5,6 +5,8 @@ import Footer from './../components/Footer';
 import Picture from './../../data/portfolio.jpg';
 import './About.css';
 import Routes from './../../data/Constants';
+import Resume from './../../data/resume.pdf';
+
 
 
 class About extends Component {
@@ -27,11 +29,12 @@ class About extends Component {
 								<br/>
 								I am a senior studying Informatics,
 								combination of systems design and software engineering, at the
-								University of Washington in Seattle. I am driven by the
+									<span className={"standout"}> University of Washington</span> in Seattle. I am driven by the
 								potential technology offers to create new affordances.
 								My experience lies in web development using ReactJS. I am
-								interested in contributing to distributed systems and machine
-								learning applications.
+								interested in contributing to
+								<span className={"standout"}> distributed systems </span>
+								and <span className={"standout"}> machine learning </span> applications.
 								<br/><br/>
 
 								I feel strongly about improving equity in STEM and computing
@@ -48,8 +51,8 @@ class About extends Component {
 							</p>
 
 							<div className={'buttons'}>
-								<a href={"#selectedProjects"}><button className={'btn btn-secondary'}>Projects</button></a>
-								<Link to={Routes.home}><button className={'btn btn-secondary'}>Resume</button></Link>
+								<a href={"#selectedProjects"}><button className={'abtButton'}>Projects</button></a>
+								<a href={Resume} target={"_blank"}><button className={'abtButton'}>Resume</button></a>
 							</div>
 						</div>
 					</div>

@@ -1,50 +1,92 @@
-.projBody {
-    font-family: Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    line-height: 1.5;
-    width: 90%;
-    height: auto;
-    margin: 2% auto 2% auto;
+.projHeader {
+    background-color: #E5F1F0;
+    display: flex;
+    margin: 3% 0 1.5% 0;
 }
 
-.projSection {
-    padding:  0.5% 10% 0.5% 10%;
+.projDesc {
+    width: 40%;
+    margin: 2% 0 0 20%;
 }
 
-.projectName {
-    font-size: 1.2em;
-    font-weight: bold;
-    margin: 0 0 .5% 0;
+.projImg {
+    width: 20%;
+    height: 20%;
+    margin: 5%;
 }
 
-.caption {
+.projTitle {
+    font-size: 1.8em;
+    font-weight: 300;
+}
+
+.when {
     font-size: 1.1em;
-    font-weight: lighter;
-    font-style: italic;
+    font-weight: 300;
 }
 
-.sectionTitle {
-    font-size: 1.15em;
-    font-weight: bold;
+.projSummary {
+    line-height: 2;
+    font-weight: 300;
+    font-size: 1.07em;
 }
 
-.subHeading {
-    font-size: 1em;
-    color: #3F4045;
+.projLinks {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    margin: 7% 0 7% 0;
 }
 
-.takeaway {
-    font-style: italic;
-    background-color: aliceblue;
-    padding: 1% 1% 1% 2%;
-    font-size: 1.12em;
+.projBody {
+    margin: 0 20% 0 20%;
 }
 
-.inlineFigure {
-    display: block;
-    width: 50%;
-    margin: 1% auto 1% auto;
+.sectionHeading {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.6em;
+    color: #028090;
 }
 
-/* TODO: Add background to media */
-.mediaBg {
+.sectionText {
+    line-height: 2.2;
+    font-weight: 300;
+    font-size: 1.07em;
+}
+
+.projButton {
+    font-weight: 300;
+    background-color: #fff;
+    border-radius: 5px;
+    border: solid 1px #028090;
+    width: 6em;
+    height: 2.7em;
+    transition: all .3s ease-in-out;
+    margin: 0 15px 0 0;
+}
+
+.projButton:hover {
+    background-color: #028090;
+    opacity: 0.9;
+    color: #fff;
+    cursor: pointer
+}
+
+.bolder {
+    font-weight: 400;
+}
+
+@media (max-width: 640px) and (min-width: 310px) {
+    .projImg {
+        display: none;
+    }
+
+    .projDesc {
+        width: 80%;
+        margin: 2% 15% 0 15%;
+    }
+
+    .projBody {
+        margin: 0 15% 0 15%;
+    }
 }

@@ -16,9 +16,14 @@ class HomeScreen extends Component {
 							and <span className={"standout"}>Human Computer Interaction</span> at the University of Washington in Seattle.
 						</p>
 						<p className={"currRole"}>
-							I am currently developing research tools at the
+							I am currently engineering research tools at the
 							<a href={'http://faculty.washington.edu/ajko/students'}> Code and Cognition Lab</a> directed by Dr. Andrew J. Ko.
+
+							<br/>
+
+							I am also working as a software engineer for <a href={'http://depts.washington.edu/melab/projects/project-emar/'}>Project EMAR</a>.
 						</p>
+
 					</div>
 					<div className={"sections"} id={"selectedProjects"}>
 						<Section title={"Selected Projects"}

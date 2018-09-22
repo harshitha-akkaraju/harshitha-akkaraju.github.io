@@ -13,6 +13,7 @@
 }
 
 .customButton {
+    background-color: #fff;
     border: solid 1px #028090;
     border-radius: 3px;
     font-size: 0.8em;
