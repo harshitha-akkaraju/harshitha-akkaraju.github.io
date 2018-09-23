@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
 import './Project.css';
+import './Koconut.css';
 
-class Ohana extends Component {
+class Coino extends Component {
 	render() {
 		let image = "https://raw.githubusercontent.com/harshitha-akkaraju/harshitha-akkaraju.github.io/master/portfolio/src/images/alexa.png";
 		return(
 				<div>
 					<div className={'projHeader'}>
 						<div className={'projDesc'}>
-							<p className={'projTitle'}>Ohana</p>
-							<p className={'when'}><em>Spring 2018</em></p>
+							<p className={'projTitle'}>Koconut</p>
+							<p className={'when'}><em>June 2018 - Present</em></p>
 							<p className={'projSummary'}>
 								In Spring 2018, I took Cooperative Software Development taught by
 								Microsoft Senior Researcher Andrew Begel. Spanning over 10 weeks,
@@ -17,12 +18,8 @@ class Ohana extends Component {
 								Alexa skill to manage chores among roommates.
 							</p>
 							<div className={'projLinks'}>
-								<a href={'https://ohana-e7233.firebaseapp.com/#/'}
+								<a href={'https://cyberlearning-1d4e0.firebaseapp.com/'}
 									 target={'_blank'}><button className={'projButton'}>Website</button></a>
-								<a href={'https://www.youtube.com/embed/i6oRzw1Durs?ecver=1'}
-									 target={'_blank'}>
-									<button className={'projButton'}>Demo</button>
-								</a>
 							</div>
 						</div>
 						<img className={'projImg'}
@@ -102,4 +99,4 @@ class Ohana extends Component {
 	}
 }
 
-export default Ohana;
+export default Coino;

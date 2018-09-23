@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Divider extends Component {
 	render() {
 		let styles = {
-			borderTop: 'solid',
+			borderTop: 'none',
 			borderWidth: '1.5px',
 			borderColor: '#c1c1c1',
 			width: this.props.width,

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import NavBar from './../components/NavBar';
 import Ohana from './../components/Ohana';
-import Coino from './../components/Coino';
+import Koconut from './../components/Koconut';
 import Footer from './../components/Footer';
 
 class ProjectView extends Component {
@@ -10,8 +10,8 @@ class ProjectView extends Component {
 		let component = undefined;
 		if (pathName.includes('Ohana')) {
 			component = <Ohana/>;
-		} else if (pathName.includes('Coino')) {
-			component = <Coino/>;
+		} else if (pathName.includes('Koconut')) {
+			component = <Koconut/>;
 		}
 		return(
 				<div>
