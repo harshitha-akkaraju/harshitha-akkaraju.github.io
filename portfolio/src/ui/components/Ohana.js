@@ -35,9 +35,11 @@ class Ohana extends Component {
 						<div>
 							<p className={'sectionHeading'}>Role</p>
 							<p className={'sectionText'}>
+								<span className={'projOverview'}>
 								For this project, I owned the <span className={'standout bolder'}> voice interaction design and the
 								development of the Alexa skill</span>. I also contributed to the <span className={'standout bolder'}>design
 								of the data schema and the web app</span>.
+								</span>
 								<br/>
 								During the first 3 weeks we spent working on the project, I
 								contributed to the user experience design of the web app so that

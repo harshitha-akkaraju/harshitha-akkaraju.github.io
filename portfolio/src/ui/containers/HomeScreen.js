@@ -3,6 +3,8 @@ import NavBar from './../components/NavBar';
 import Section from './Section';
 import Footer from './../components/Footer';
 import './HomeScreen.css';
+import Routes from './../../data/Constants'
+import { Link } from "react-router-dom";
 
 class HomeScreen extends Component {
 	render() {
@@ -21,13 +23,17 @@ class HomeScreen extends Component {
 
 							<br/>
 
-							I am also working as a software engineer for <a href={'http://depts.washington.edu/melab/projects/project-emar/'}>Project EMAR</a>.
+							I am also developing software for <a href={'http://depts.washington.edu/melab/projects/project-emar/'}>Project EMAR</a>.
 						</p>
 
 					</div>
 					<div className={"sections"} id={"selectedProjects"}>
 						<Section title={"Selected Projects"}
 										 history={this.props.history}/>
+						<br/>
+						<div className={'sandbox'}>
+							<Link to={Routes.sandbox}><button className={'btn btn-secondary'}>See Sandbox</button></Link>
+						</div>
 					</div>
 					<Footer/>
 				</div>

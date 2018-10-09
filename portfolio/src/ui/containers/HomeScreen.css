@@ -28,6 +28,11 @@
     color: #028090;
 }
 
+.sandbox {
+    display: flex;
+    justify-content: center;
+}
+
 @media (max-width: 640px) and (min-width: 310px) {
     .pitch {
         width: 70%;

@@ -29,12 +29,13 @@ class About extends Component {
 								<br/>
 								I am a senior studying Informatics,
 								combination of systems design and software engineering, at the
-									<span className={"standout"}> University of Washington</span> in Seattle. I am driven by the
-								potential technology offers to create new affordances.
-								My experience lies in web development using ReactJS. I am
+									<span className={"standout"}> University of Washington</span> in Seattle.
+								My experience lies in web development using ReactJS and
+								data science projects developed in Python. I am
 								interested in contributing to
 								<span className={"standout"}> distributed systems </span>
 								and <span className={"standout"}> machine learning </span> applications.
+
 								<br/><br/>
 
 								I feel strongly about improving equity in STEM and computing

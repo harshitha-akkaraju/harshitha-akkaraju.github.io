@@ -2,95 +2,77 @@ import React, { Component } from 'react';
 import './Project.css';
 import './Koconut.css';
 
-class Coino extends Component {
+class Koconut extends Component {
 	render() {
-		let image = "https://raw.githubusercontent.com/harshitha-akkaraju/harshitha-akkaraju.github.io/master/portfolio/src/images/alexa.png";
+		let image = "https://raw.githubusercontent.com/harshitha-akkaraju/harshitha-akkaraju.github.io/master/portfolio/src/images/lab-time.JPG";
 		return(
 				<div>
 					<div className={'projHeader'}>
-						<div className={'projDesc'}>
+						<div className={'koconutDesc'}>
 							<p className={'projTitle'}>Koconut</p>
 							<p className={'when'}><em>June 2018 - Present</em></p>
 							<p className={'projSummary'}>
-								In Spring 2018, I took Cooperative Software Development taught by
-								Microsoft Senior Researcher Andrew Begel. Spanning over 10 weeks,
-								our project involved developing a web application and an Amazon
-								Alexa skill to manage chores among roommates.
+								Koconut is an intelligent programming tutor being developed at
+								the
+								<a href={'http://faculty.washington.edu/ajko/students'}> Code and Cognition Lab</a>,
+								an innovation driven research team that produces knowledge in the
+								areas computing Education, software engineering and human
+								computer interaction.
 							</p>
-							<div className={'projLinks'}>
+							<div className={'koconutLinks'}>
 								<a href={'https://cyberlearning-1d4e0.firebaseapp.com/'}
 									 target={'_blank'}><button className={'projButton'}>Website</button></a>
 							</div>
 						</div>
-						<img className={'projImg'}
-								 alt={'project illustration'}
-								 src={image}/>
 					</div>
-
 
 					<div className={'projBody'}>
 						<div>
 							<p className={'sectionHeading'}>Role</p>
-							<p className={'sectionText'}>
-								For this project, I owned the <span className={'standout bolder'}> voice interaction design and the
-								development of the Alexa skill</span>. I also contributed to the <span className={'standout bolder'}>design
-								of the data schema and the web app</span>.
-								<br/>
-								During the first 3 weeks we spent working on the project, I
-								contributed to the user experience design of the web app so that
-								it is consistent with the voice interaction model of the Alexa
-								skill. I also designed the user data schema such that it is easy
-								to read and change upon user’s request through the Alexa skill.
-								I spent the remaining 7 weeks linking the Alexa skill with the user
-								accounts on the web app, designing the voice interaction model, and
-								implementing the task rotation loop among roommates.
-								<br/>
-								Within this team, my biggest assets were my ability to
-								<span className={'bolder standout'}> design for consistency
-								across two different interfaces </span> and <span className={'bolder standout'}> being
-								resourceful to build the Alexa skill</span> which was originally a
-								stretch goal to be part of our MVP.
-							</p>
-						</div>
 
-						<div>
-							<p className={'sectionHeading'}>Challenges</p>
 							<p className={'sectionText'}>
-								The most challenging part was figuring out how to pair some of
-								the different technologies. Connecting the Amazon tech stack
-								together was very developer friendly. However, we decided to use
-								Google’s Firebase platform for user authentication and storing
-								user data. Since we implemented Amazon authentication to get the
-								skill, we only had access to the email address associated with
-								the Echo device. Hence we had to come up with a clever way to
-								read data from and write data to the Firebase database.
+								Advised by <a href={'http://benjixie.com/'}>Benjie Xie</a>,
+								a PhD student and <a href={'http://faculty.washington.edu/ajko/'}>
+								Prof. Andrew J. Ko</a>, I contributed to the <span className={'bolder standout'}>design and
+								development of several components</span> of the app including the data
+								schema and tools that make it easier to create new content.
+								In addition, I also contributed to a research study investigating
+								how novices make use of explicit programming strategies and a
+								paper accepted to the <a href={'https://sigcse.org/sigcse/'}>SIGCSE conference</a>.
 								<br/>
-								Other challenges included designing a robust voice interaction
-								model, testing the functionality of the Alexa skill, scoping
-								our project for 10 weeks.
+
 							</p>
+							<img src={image} className={'labImage'}/>
+							<br/><br/>
 						</div>
 
 						<div>
 							<p className={'sectionHeading'}>Learnings</p>
 							<p className={'sectionText'}>
-								<b>Know your tech-stack</b>
+								<b>Fail fast and Iterate quickly</b>
 								<br/>
-								We decided to use Firebase for user authentication and storing
-								user generated data. In retrospect, I think we would have been
-								able to provide a much more consistent experience if we had used
-								Amazon Cognito for user authentication and Amazon DynamoDB for
-								storing user data.
+								Since mixed-initiative programming tutors are still an open
+								design space, my work involved a lot of ideating and prototyping
+								the interaction design on the application. Sometimes, the
+								proposed designs weren’t learner-centric enough either
+								(ex: in terms of workflow, labels etc). It was crucial to
+								iterate on those ideas quickly in order to produce an app to
+								conduct the initial usability tests. I discovered that constantly
+								thinking about the users will help me be more critical about
+								my ideas.
 
 								<br/>
 
-								<b>Don’t hesitate to explore new things</b>
+								<b>Externalize your work</b>
 								<br/>
-								I wanted to use this class as an opportunity to learn new
-								technologies (AWS Lambda, Amazon S3, ASK). Inspite of the initial
-								friction I faced exploring these tools, seeing the value these
-								tools offered sparked my interest in Cloud Computing and
-								distributed systems.
+								After each major design or development sprint, my team had the
+								opportunity to present our work to the rest of the lab and
+								receive feedback on our work. I found these sessions incredibly
+								useful because it gave me the chance to articulate the rationale
+								for my design choices. These sessions also brought input from
+								various perspectives thereby giving us notes for our next
+								iteration. I hope to continue to externalize my work in other
+								contexts as well.
 							</p>
 						</div>
 					</div>
@@ -99,4 +81,4 @@ class Coino extends Component {
 	}
 }
 
-export default Coino;
+export default Koconut;
