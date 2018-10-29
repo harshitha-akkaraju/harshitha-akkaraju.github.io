@@ -27,20 +27,17 @@ class About extends Component {
 
 								<span className={"aboutText"}>
 								<br/>
-								I am a senior studying Informatics,
-								combination of systems design and software engineering, at the
-									<span className={"standout"}> University of Washington</span> in Seattle.
-								My experience lies in web development using ReactJS and
-								data science projects developed in Python. I am
-								interested in contributing to
-								<span className={"standout"}> distributed systems </span>
-								and <span className={"standout"}> machine learning </span> applications.
+								I am an aspiring software engineer. I would like to shape the design and development of customer facing software. I have experience with full-stack web development and
+								data analysis. I am studying Informatics with a focus in CS fundamentals, HCI and Data Science at the University of Washington in Seattle. I avidly follow tech podcasts; my favorite ones are <a href="https://softwareengineeringdaily.com">Software Engineering Daily </a>
+								and <a href="https://thewomenintechshow.com/">The Women in Tech Show</a>.
+
 
 								<br/><br/>
 
-								I feel strongly about improving equity in STEM and computing
-								education. As a student leader in the UW Society of Women Engineers
-								and Women in Informatics, I help organize several events including
+								 I feel strongly 
+								about improving equity in STEM and computing education. 
+								As a student leader in the <a href="https://www.uwswe.com/">UW Society of Women Engineers </a>
+								and <a href="https://winfo.ischool.uw.edu">Women in Informatics</a>, I help organize several events including
 								programming workshops, networking events, and a hackathon.
 
 								<br/><br/>
