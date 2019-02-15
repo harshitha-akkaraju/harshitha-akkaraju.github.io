@@ -22,8 +22,7 @@ class HomeScreen extends Component {
 							<a href={'http://faculty.washington.edu/ajko/students'}> Code and Cognition Lab</a> directed by Dr. Andrew J. Ko.
 
 							<br/>
-
-							I am also developing software for <a href={'http://depts.washington.edu/melab/projects/project-emar/'}>Project EMAR</a>.
+							During Summer 2019, I will be working with PayPal as a Software Engineer Intern on their Data Platform Engineering team.
 						</p>
 
 					</div>
