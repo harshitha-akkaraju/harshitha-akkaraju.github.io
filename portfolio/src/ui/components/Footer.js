@@ -8,7 +8,7 @@ class Footer extends Component {
 		return(
 				<div id={"component"}>
 					<div id={"footerContent"}>
-						<p className={"center"}>Built from scratch by Harshitha Akkaraju</p>
+					<p className={"center"}>Designed and Built by Harshitha Akkaraju</p>
 						<div className={"footerLinks"}>
 							<a href={Routes.email}>
 								<i className="fas fa-envelope icon"/>
