@@ -48,10 +48,10 @@ class About extends Component {
 							</span>
 							</p>
 
-							<div className={'buttons'}>
+							{/* <div className={'buttons'}>
 								<a href={"#selectedProjects"}><button className={'abtButton'}>Projects</button></a>
 								<a href={Resume} target={"_blank"}><button className={'abtButton'}>Resume</button></a>
-							</div>
+							</div> */}
 						</div>
 					</div>
 					<Footer/>
