@@ -68,11 +68,11 @@ class Section extends Component {
 
 	render() {
 		let list = [];
-		if (this.state.view === this.ProjectTypes.selected) {
-			list = this.compileSelected();
-		} else if (this.state.view === this.ProjectTypes.side) {
-			list = this.compileSide();
-		}
+		// if (this.state.view === this.ProjectTypes.selected) {
+		// 	list = this.compileSelected();
+		// } else if (this.state.view === this.ProjectTypes.side) {
+		// 	list = this.compileSide();
+		// }
 
 		return(
 				<div id={"sectionBody"}>
