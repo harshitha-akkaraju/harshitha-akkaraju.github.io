@@ -18,13 +18,16 @@ class HomeScreen extends Component {
 							<p className={"pitch"}>
 								I am a senior at the University of Washington Seattle studying Informatics - a combination of systems design and software engineering.
 								<br /><br />
-
+								I am an undergraduate TA for <a href={"https://jmankoff.github.io/interaction/"}>CSE 340</a> (Android Development). 
+								
 								I am developing research tools at the
-								<a href={'http://faculty.washington.edu/ajko/students'}> Code and Cognition Lab</a> directed by Dr. Andrew J. Ko. During Summer 2019, I will be working with PayPal as a Software Engineering Intern in the Bay Area.
+								<a href={'http://faculty.washington.edu/ajko/students'}> Code and Cognition Lab</a> directed by Dr. Andrew J. Ko.
+
+								During Summer 2019, I will be working with PayPal as a Software Engineering Intern in the Bay Area.
 
 								<br /><br />
 
-								I feel strongly about improving equity in STEM and computing education. I take part in outreach work through Society of Women Engineers (SWE) and Women in Informatics.
+								I feel strongly about improving equity in STEM and computing education. I take part in outreach work through Society of Women Engineers (SWE) and Women in Informatics. In my free time, I enjoy cooking and being outdoors.
 							</p>
 						</div>
 					</div>
