@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import Projects from './../../data/Projects';
 import SideProjects from './../../data/sandbox/ProjectDescriptions';
-import ProjectCard from './ProjectCard';
-import LargeCard from './LargeCard';
+//import ProjectCard from './ProjectCard';
+//import LargeCard from './LargeCard';
 import './Section.css';
 
 class Section extends Component {
@@ -32,37 +32,37 @@ class Section extends Component {
 	};
 
 	compileSelected() {
-		let result = [];
-		Object.keys(this.state.content).map((key, index) => {
-			let item = this.state.content[key];
-			result.push(
-					<Link to={`/projects/${item.name}`} key={index}>
-						<ProjectCard title={item.name}
-												 when={item.when}
-												 imgURL={item.imgURL}
-												 blurb={item.position}
-												 history={this.props.history}/>
-					</Link>
-			);
-		});
-		return result;
+		// let result = [];
+		// Object.keys(this.state.content).map((key, index) => {
+		// 	let item = this.state.content[key];
+		// 	result.push(
+		// 			<Link to={`/projects/${item.name}`} key={index}>
+		// 				<ProjectCard title={item.name}
+		// 										 when={item.when}
+		// 										 imgURL={item.imgURL}
+		// 										 blurb={item.position}
+		// 										 history={this.props.history}/>
+		// 			</Link>
+		// 	);
+		// });
+		// return result;
 	}
 
 	compileSide() {
-		let result = [];
-		Object.keys(this.state.content).map((key, index) => {
-			let item = this.state.content[key];
-			result.push(
-					<a href={item.projectURL} key={index}>
-						<LargeCard title={item.name}
-											 description={item.position}
-											 completed={item.when}
-											 history={this.props.history}
-											 imgURL={item.imgURL}/>
-					</a>
-			);
-		});
-		return result;
+		// let result = [];
+		// Object.keys(this.state.content).map((key, index) => {
+		// 	let item = this.state.content[key];
+		// 	result.push(
+		// 			<a href={item.projectURL} key={index}>
+		// 				<LargeCard title={item.name}
+		// 									 description={item.position}
+		// 									 completed={item.when}
+		// 									 history={this.props.history}
+		// 									 imgURL={item.imgURL}/>
+		// 			</a>
+		// 	);
+		// });
+		// return result;
 	}
 
 
