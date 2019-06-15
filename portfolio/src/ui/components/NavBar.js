@@ -47,7 +47,6 @@ class NavBar extends Component {
 							</div>
 						</div>
 					</div>
-					<Divider width={'70%'}/>
 				</div>
 		);
 	}
