@@ -16,11 +16,14 @@ class HomeScreen extends Component {
 						<div className="home-body">
 							<div className="home-headshot"><Headshot /></div>
 							<p className={"pitch"}>
-								I am a senior at the University of Washington Seattle studying Informatics - a combination of systems design and software engineering.
+								<span className={"greeting"}>Hello, there! My name is Harshitha.</span>
+								<br/><br/>
+
+								I am a 4th year undergraduate student at the University of Washington Seattle studying Informatics - a combination of systems design and software engineering.
 								<br /><br />
-								I am an undergraduate TA for <a href={"https://jmankoff.github.io/interaction/"}>CSE 340</a> (Android Development). 
+								Currently, I am a TA for <a href={"https://jmankoff.github.io/interaction/"}>CSE 340</a> (Android Development). 
 								
-								I am developing research tools at the
+								I am also developing research tools at the
 								<a href={'http://faculty.washington.edu/ajko/students'}> Code and Cognition Lab</a> directed by Dr. Andrew J. Ko.
 
 								During Summer 2019, I will be working with PayPal as a Software Engineering Intern in the Bay Area.

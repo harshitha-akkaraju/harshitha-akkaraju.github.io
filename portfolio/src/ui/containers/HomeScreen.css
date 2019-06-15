@@ -2,10 +2,15 @@
     background-color: #E5F1F0;
 }
 
+.greeting {
+    font-weight: 400;
+    font-size: 1.0em;
+    color: #55769A;
+}
+
 .home-body {
-    padding: 3%;
+    width: 80%;
     margin: auto;
-    width: 85%;
     display: flex;
     justify-content: space-between;
 }
