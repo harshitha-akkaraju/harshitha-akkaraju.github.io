@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import './Card.css';
 import Divider from './Divider';
+import Markdown from 'react-markdown';
 
 class Card extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            expand: false
+            expand: this.props.disabled
         }
     }
 
@@ -17,43 +18,50 @@ class Card extends Component {
     }
 
     render() {
-        let tools = ["AWS lambda", "React"]; // this.props.tools;
+        let tools = this.props.tools;
         let badges = [];
         tools.forEach((elem, index) => {
             badges.push(<span key={index} className="badge badge-info badge-div badge-text"><div className="font-weight-light">{elem}</div></span>);
         });
 
+        let links = this.props.links;
+        let linkBadges = [];
+        links.forEach((elem, index) => {
+            linkBadges.push(<a href={elem.link} key={"link-" + index} className="badge link-badge badge-light badge-div badge-text"><div className="font-weight-light text-dark">{elem.alt}</div></a>);
+        });
+
         return (
             <div>
                 <div className="card">
-                    <div className="card-header" onClick={() => { this.toggleCard() }}>
+                    <div className="card-header bg-light" onClick={() => { if (!this.props.disabled) { this.toggleCard()} }}>
                         <div className="card-action">
                             <div className="card-project-name">
-                                 CubeRule -- AWS Cyber Range
+                                 {this.props.title}
+                                 <span style={{float: 'right'}}>{this.props.organization}</span>
                             </div>
-                            <span className="font-weight-light">{"October 2018 - June 2019"}</span>
+                            <span className="font-weight-light">{this.props.date}</span>
                         </div>
                     </div>
                     {this.state.expand &&
                         <div className="card-body">
                             <div className="card-description">
                                 <div>
-                                    <p>
-                                        ntroducing the next
-                                        generation of wireless
-                                        Last week over 200,000 people changed
-                                        the way they experience texting blah calling.
-                                        Today, it's your turn.
-                                    </p>
-                                    
                                     <div>
-                                    <p className={"font-weight-bold text-secondary"}>Technologies</p>
+                                        <Markdown source={this.props.description}/>
+                                    </div>
+
+                                    <div style={{margin: "2% 0"}}>
+                                        {linkBadges}
+                                    </div>
+
+                                    <div>
+                                        <p className={"font-weight-bold text-secondary"}>Technologies</p>
                                         {badges}
                                     </div>
                                     
                                 </div>
 
-                            <img src={"https://images-na.ssl-images-amazon.com/images/I/41W1-m6w2%2BL.jpg"}/>
+                            <img src={this.props.thumbnail}/>
                             </div>
                         </div>
                     }

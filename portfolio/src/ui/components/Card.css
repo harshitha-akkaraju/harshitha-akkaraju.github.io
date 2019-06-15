@@ -7,6 +7,12 @@
     background-color: #55769A; 
 }
 
+.link-badge {
+   background-color: #F4F4F4;
+   opacity: 0.75;
+   border: 1.5px solid #094074; 
+}
+
 .badge-div {
    margin: 0 1%;
    font-size: 1em;
@@ -29,4 +35,5 @@
 .card-project-name {
     font-weight: 500;
     color: #55769A;
+    font-size: 0.95em;
 }
