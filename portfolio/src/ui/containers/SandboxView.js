@@ -3,7 +3,7 @@ import NavBar from './../components/NavBar';
 import Footer from './../components/Footer';
 import './SandboxView.css';
 import Card from './../components/Card';
-import Routes from './../../data/Constants';
+import schema from './../../data/projects.json';
 
 class SandboxView extends Component {
 	componentDidMount() {
@@ -26,12 +26,21 @@ class SandboxView extends Component {
 		window.scrollTo(0, 0)
 	}
 
+	
+
 	render() {
+		let projects = schema.projects;
+		let cards = [];
+		projects.forEach((project, index) => {
+			cards.push(
+			<div key={"card" + index} style={{margin: "1.5% 0%"}}><Card title={project.title} date={project.date} tools={project.tools} links={project.links} description={project.description} thumbnail={project.thumbnail} disabled={false}/></div>);
+		});
+
 		return (
 			<div>
 				<NavBar history={this.props.history} />
-				<div style={{width: "75%", margin: "auto"}}>
-					<Card />
+				<div className={"sandbox-body"}>
+					{cards}
 				</div>
 				<Footer />
 				<div id={"chevron"} className={"chevronbg"} onClick={() => this.scrollToTop()}><i className="fas fa-chevron-up chevron" /></div>
