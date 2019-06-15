@@ -3,11 +3,11 @@ import React, { Component } from 'react';
 class Divider extends Component {
 	render() {
 		let styles = {
-			borderTop: 'none',
-			borderWidth: '1.5px',
+			borderTop: 'solid',
+			borderWidth: '1px',
 			borderColor: '#c1c1c1',
 			width: this.props.width,
-			margin: '1.5% auto 1.5% auto'
+			margin: '1% auto 1% auto'
 		};
 		return(
 				<div style={styles} />
