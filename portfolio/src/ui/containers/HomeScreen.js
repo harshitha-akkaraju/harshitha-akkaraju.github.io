@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import NavBar from './../components/NavBar';
+import Headshot from './../components/Headshot';
 import Section from './Section';
 import Footer from './../components/Footer';
 import './HomeScreen.css';
@@ -11,27 +12,26 @@ class HomeScreen extends Component {
 		return(
 				<div>
 					<NavBar history={this.props.history}/>
-					<div className={"text"}>
-						<p className={"pitch"}>Hello, there!</p>
-						<p className={"pitch"}>
-							I am a <span>design-literate developer</span> studying <span className={"standout"}>Software Engineering </span>
-							and <span className={"standout"}>Human Computer Interaction</span> at the University of Washington in Seattle.
-						</p>
-						<p className={"currRole"}>
-							I am currently engineering research tools at the
-							<a href={'http://faculty.washington.edu/ajko/students'}> Code and Cognition Lab</a> directed by Dr. Andrew J. Ko.
+					<div className="home-container">
+						<div className="home-body">
+							<div className="home-headshot"><Headshot /></div>
+							<p className={"pitch"}>
+								<span className={"greeting"}>Hello, there! My name is Harshitha.</span>
+								<br/><br/>
 
-							<br/>
-							During Summer 2019, I will be working with PayPal as a Software Engineer Intern on their Data Platform Engineering team.
-						</p>
+								I am a 4th year undergraduate student at the University of Washington Seattle studying Informatics - a combination of systems design and software engineering.
+								<br /><br />
+								Currently, I am a TA for <a href={"https://jmankoff.github.io/interaction/"}>CSE 340</a> (Android Development). 
+								
+								I am also developing research tools at the
+								<a href={'http://faculty.washington.edu/ajko/students'}> Code and Cognition Lab</a> directed by Dr. Andrew J. Ko.
 
-					</div>
-					<div className={"sections"} id={"selectedProjects"}>
-						<Section title={"Selected Projects"}
-										 history={this.props.history}/>
-						<br/>
-						<div className={'sandbox'}>
-							<Link to={Routes.sandbox}><button className={'btn btn-secondary'}>See Sandbox</button></Link>
+								During Summer 2019, I will be working with PayPal as a Software Engineering Intern in the Bay Area.
+
+								<br /><br />
+
+								I feel strongly about improving equity in STEM and computing education. I take part in outreach work through Society of Women Engineers (SWE) and Women in Informatics. In my free time, I enjoy cooking and being outdoors.
+							</p>
 						</div>
 					</div>
 					<Footer/>

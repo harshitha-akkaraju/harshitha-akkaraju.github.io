@@ -1,3 +1,8 @@
+.sandbox-body {
+    width: 75%;
+    margin: auto;
+}
+
 .description {
     padding-top: 1vh;
     padding-bottom: 1vh;

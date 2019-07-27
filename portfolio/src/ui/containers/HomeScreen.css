@@ -1,44 +1,40 @@
-.sections {
-    padding: 1% 0 3% 0;
-    background-color: #E5F1F0; /* #d6e5e3;*/
+.home-container {
+    background-color: #E5F1F0;
 }
 
-.text {
-    margin: 1%;
-    padding: 2%;
-    font-weight: 300;
+.greeting {
+    font-weight: 400;
+    font-size: 1.0em;
+    color: #55769A;
+}
+
+.home-body {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
 }
 
 .pitch {
-    padding-bottom: 1%;
-    width: 70%;
-    margin: 0 auto 0 auto;
-    font-size: 1.30em;
+    padding: 5%;
+    width: 100%;
+    font-size: 1.3em;
+    font-weight: 300;
 }
 
-.currRole {
-    padding-top: 2vh;
-    padding-bottom: 2vh;
-    margin: 0 auto 0 auto;
-    width: 70%;
-    font-size: 1.30em;
-}
-
-.standout {
-    color: #028090;
-}
-
-.sandbox {
+.home-headshot {
     display: flex;
-    justify-content: center;
+    align-items: center;
 }
 
-@media (max-width: 640px) and (min-width: 310px) {
-    .pitch {
-        width: 70%;
+@media (max-width: 920px) and (min-width: 310px) {
+    .home-body {
+        display: block;
+        width: 100%;
     }
 
-    .currRole {
-        width: 70%;
+    .pitch {
+        width: 100%;
+        font-size: 1.2em;
     }
 }

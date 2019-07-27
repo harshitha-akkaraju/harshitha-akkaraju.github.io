@@ -41,13 +41,12 @@ class NavBar extends Component {
 							<Link to={Routes.home} id={"nameLg"} style={activeStyles[0]}>Harshitha Akkaraju</Link>
 							<Link to={Routes.home} id={"nameSm"} style={activeStyles[0]}>Harshitha</Link>
 							<div className={"links"} style={styles}>
-								<Link to={project} className={"link"} style={activeStyles[1]}>{tabName}</Link>
-								<Link to={Routes.about} className={"link"} style={activeStyles[2]}>About</Link>
+								<Link to={Routes.sandbox} className={"link"} style={activeStyles[1]}>Projects</Link>
+								<Link to={Routes.about} className={"link"} style={activeStyles[2]}>Experience</Link>
 								<a href={Resume} className={"link"} target={"_blank"}>Resume</a>
 							</div>
 						</div>
 					</div>
-					<Divider width={'70%'}/>
 				</div>
 		);
 	}
