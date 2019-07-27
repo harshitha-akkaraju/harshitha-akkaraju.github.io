@@ -47,7 +47,7 @@ class Card extends Component {
                             <div className="card-description">
                                 <div>
                                     <div>
-                                        <Markdown source={this.props.description}/>
+                                    <Markdown source={this.props.description}/>
                                     </div>
 
                                     <div style={{margin: "2% 0"}}>
