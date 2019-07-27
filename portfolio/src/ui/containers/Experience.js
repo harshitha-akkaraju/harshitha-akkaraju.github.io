@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import NavBar from './../components/NavBar';
 import Footer from './../components/Footer';
 import Card from './../components/Card';
-import Divider from './../components/Divider';
 
-import Routes from './../../data/Constants';
+
+
 import Resume from './../../data/resume.pdf';
 import schema from './../../data/work.json';
 import tech from './../../data/skills.json';

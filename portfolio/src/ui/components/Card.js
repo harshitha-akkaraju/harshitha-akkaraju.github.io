@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Card.css';
-import Divider from './Divider';
 import Markdown from 'react-markdown';
 
 class Card extends Component {

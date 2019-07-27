@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import NavBar from './../components/NavBar';
 import Headshot from './../components/Headshot';
-import Section from './Section';
+
 import Footer from './../components/Footer';
 import './HomeScreen.css';
-import Routes from './../../data/Constants'
-import { Link } from "react-router-dom";
+
+
 
 class HomeScreen extends Component {
 	render() {

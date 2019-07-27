@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import Routes from './../../data/Constants';
 import './NavBar.css';
-import Divider from './Divider';
 import Resume from './../../data/resume.pdf';
 
 class NavBar extends Component {
