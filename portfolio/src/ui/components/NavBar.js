@@ -35,7 +35,7 @@ class NavBar extends Component {
 
 		return(
 				<div>
-					<div id={"navBarBody"}>
+					{/* <div id={"navBarBody"}>
 						<div className={"navBarHeader"}>
 							<Link to={Routes.home} id={"nameLg"} style={activeStyles[0]}>Harshitha Akkaraju</Link>
 							<Link to={Routes.home} id={"nameSm"} style={activeStyles[0]}>Harshitha</Link>
@@ -45,7 +45,7 @@ class NavBar extends Component {
 								<a href={Resume} className={"link"} target={"_blank"}>Resume</a>
 							</div>
 						</div>
-					</div>
+					</div> */}
 				</div>
 		);
 	}

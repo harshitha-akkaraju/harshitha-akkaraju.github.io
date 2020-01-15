@@ -1,5 +1,6 @@
 .home-container {
     background-color: #E5F1F0;
+    width: 100%;
 }
 
 .greeting {
@@ -9,10 +10,7 @@
 }
 
 .home-body {
-    width: 80%;
     margin: auto;
-    display: flex;
-    justify-content: space-between;
 }
 
 .pitch {
