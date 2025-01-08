@@ -1,2 +1,0 @@
-# harshitha-akkaraju.github.io
-
